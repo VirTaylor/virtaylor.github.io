@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>Synology &#8211; Virtualized Taylor</title>
+	<atom:link href="/tag/synology/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Networking - Virtualization - Security - Automation</description>
+	<lastBuildDate>Thu, 02 Nov 2023 14:13:08 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+
+<image>
+	<url>https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/05/cropped-3123876.png?fit=32%2C32&#038;ssl=1</url>
+	<title>Synology &#8211; Virtualized Taylor</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+<site xmlns="com-wordpress:feed-additions:1">158275011</site>	<item>
+		<title>CloudyRange &#8211; Part 1 &#8211; Synology DS723+ &#8211; Getting Started</title>
+		<link>/2023/05/15/cloudyrange-part-1-synology-ds723-getting-started/</link>
+					<comments>/2023/05/15/cloudyrange-part-1-synology-ds723-getting-started/#respond</comments>
+		
+		<dc:creator><![CDATA[VirTaylor]]></dc:creator>
+		<pubDate>Mon, 15 May 2023 14:45:09 +0000</pubDate>
+				<category><![CDATA[Storage]]></category>
+		<category><![CDATA[Synology]]></category>
+		<guid isPermaLink="false">https://virtualizedtaylor.com/?p=457</guid>
+
+					<description><![CDATA[Overview/Introduction With the help of Synology, I am embarking on the creation of a portable lab environment called CloudyRange. The objective of CloudyRange is to create a high performance lab environment that is small enough to fit in my backpack when traveling for work and be a small "cloud" as you may never know where &#8230; <a href="/2023/05/15/cloudyrange-part-1-synology-ds723-getting-started/" class="more-link">Continue reading <span class="screen-reader-text">CloudyRange &#8211; Part 1 &#8211; Synology DS723+ &#8211; Getting Started</span> <span class="meta-nav">&#8594;</span></a>]]></description>
+										<content:encoded><![CDATA[<p>Overview/Introduction With the help of Synology, I am embarking on the creation of a portable lab environment called CloudyRange. The objective of CloudyRange is to create a high performance lab environment that is small enough to fit in my backpack when traveling for work and be a small "cloud" as you may never know where &hellip; <a href="/2023/05/15/cloudyrange-part-1-synology-ds723-getting-started/" class="more-link">Continue reading <span class="screen-reader-text">CloudyRange &#8211; Part 1 &#8211; Synology DS723+ &#8211; Getting Started</span> <span class="meta-nav">&rarr;</span></a></p>]]></content:encoded>
+					
+					<wfw:commentRss>/2023/05/15/cloudyrange-part-1-synology-ds723-getting-started/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">457</post-id>	</item>
+	</channel>
+</rss>

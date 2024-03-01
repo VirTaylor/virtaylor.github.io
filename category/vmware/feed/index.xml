@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>VMWare &#8211; Virtualized Taylor</title>
+	<atom:link href="/category/vmware/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Networking - Virtualization - Security - Automation</description>
+	<lastBuildDate>Sun, 16 May 2021 14:44:53 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+
+<image>
+	<url>https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/05/cropped-3123876.png?fit=32%2C32&#038;ssl=1</url>
+	<title>VMWare &#8211; Virtualized Taylor</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+<site xmlns="com-wordpress:feed-additions:1">158275011</site>	<item>
+		<title>Automating CSR and ESXI Deployments with Ansible!</title>
+		<link>/2020/12/05/automating-csr-and-esxi-deployments-with-ansible/</link>
+					<comments>/2020/12/05/automating-csr-and-esxi-deployments-with-ansible/#respond</comments>
+		
+		<dc:creator><![CDATA[VirTaylor]]></dc:creator>
+		<pubDate>Sat, 05 Dec 2020 21:05:51 +0000</pubDate>
+				<category><![CDATA[Ansible]]></category>
+		<category><![CDATA[Automation]]></category>
+		<category><![CDATA[Cisco]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<guid isPermaLink="false">http://virtualizedtaylor.com/?p=346</guid>
+
+					<description><![CDATA[Labbing is an important way to improve your skills and gain experiences with new technologies! There are tons of ways to Lab with a lot of professionals transitioning from Physical to Virtual Labs especially with CML, GNS3 and EVE-NG. In my Lab, I have been using a lot of Virtual Appliances (CSR, FTDv, PALOv, ESXI, &#8230; <a href="/2020/12/05/automating-csr-and-esxi-deployments-with-ansible/" class="more-link">Continue reading <span class="screen-reader-text">Automating CSR and ESXI Deployments with Ansible!</span> <span class="meta-nav">&#8594;</span></a>]]></description>
+										<content:encoded><![CDATA[<p>Labbing is an important way to improve your skills and gain experiences with new technologies! There are tons of ways to Lab with a lot of professionals transitioning from Physical to Virtual Labs especially with CML, GNS3 and EVE-NG. In my Lab, I have been using a lot of Virtual Appliances (CSR, FTDv, PALOv, ESXI, &hellip; <a href="/2020/12/05/automating-csr-and-esxi-deployments-with-ansible/" class="more-link">Continue reading <span class="screen-reader-text">Automating CSR and ESXI Deployments with Ansible!</span> <span class="meta-nav">&rarr;</span></a></p>]]></content:encoded>
+					
+					<wfw:commentRss>/2020/12/05/automating-csr-and-esxi-deployments-with-ansible/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">346</post-id>	</item>
+		<item>
+		<title>Upgrade to ESXI 7.0 U1 with the CLI</title>
+		<link>/2020/11/01/upgrade-to-esxi-7-0-u1-with-the-cli/</link>
+					<comments>/2020/11/01/upgrade-to-esxi-7-0-u1-with-the-cli/#respond</comments>
+		
+		<dc:creator><![CDATA[VirTaylor]]></dc:creator>
+		<pubDate>Sun, 01 Nov 2020 15:58:39 +0000</pubDate>
+				<category><![CDATA[ESXI]]></category>
+		<category><![CDATA[Virtualization]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<guid isPermaLink="false">http://virtualizedtaylor.com/?p=328</guid>
+
+					<description><![CDATA[ESXI 7.0 U1 is here and it is time to upgrade! Normally upgrading ESXI would involve Update Manager and vCenter but in a situation where you have a single host and vCenter runs on that host, your upgrade options are limited. To start the upgrade process, you will need to download and upload (to a &#8230; <a href="/2020/11/01/upgrade-to-esxi-7-0-u1-with-the-cli/" class="more-link">Continue reading <span class="screen-reader-text">Upgrade to ESXI 7.0 U1 with the CLI</span> <span class="meta-nav">&#8594;</span></a>]]></description>
+										<content:encoded><![CDATA[<p>ESXI 7.0 U1 is here and it is time to upgrade! Normally upgrading ESXI would involve Update Manager and vCenter but in a situation where you have a single host and vCenter runs on that host, your upgrade options are limited. To start the upgrade process, you will need to download and upload (to a &hellip; <a href="/2020/11/01/upgrade-to-esxi-7-0-u1-with-the-cli/" class="more-link">Continue reading <span class="screen-reader-text">Upgrade to ESXI 7.0 U1 with the CLI</span> <span class="meta-nav">&rarr;</span></a></p>]]></content:encoded>
+					
+					<wfw:commentRss>/2020/11/01/upgrade-to-esxi-7-0-u1-with-the-cli/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">328</post-id>	</item>
+		<item>
+		<title>Upgrading the VCSA with an ISO</title>
+		<link>/2020/07/26/upgrading-the-vcsa-with-an-iso/</link>
+					<comments>/2020/07/26/upgrading-the-vcsa-with-an-iso/#respond</comments>
+		
+		<dc:creator><![CDATA[VirTaylor]]></dc:creator>
+		<pubDate>Sun, 26 Jul 2020 22:37:17 +0000</pubDate>
+				<category><![CDATA[Technology]]></category>
+		<category><![CDATA[vCenter]]></category>
+		<category><![CDATA[Virtualization]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<guid isPermaLink="false">http://blog.ucadministrator.com/?p=309</guid>
+
+					<description><![CDATA[vCenter 7 is here! vCenter 7 is here! vCenter 7 is here! Let's Patch! Alright it's been a few months since vCenter 7 has been released, and there have been a few patches that have been released since Day 1 to fix some of the graphical and runtime issues. Let's take a look at the &#8230; <a href="/2020/07/26/upgrading-the-vcsa-with-an-iso/" class="more-link">Continue reading <span class="screen-reader-text">Upgrading the VCSA with an ISO</span> <span class="meta-nav">&#8594;</span></a>]]></description>
+										<content:encoded><![CDATA[<p>vCenter 7 is here! vCenter 7 is here! vCenter 7 is here! Let's Patch! Alright it's been a few months since vCenter 7 has been released, and there have been a few patches that have been released since Day 1 to fix some of the graphical and runtime issues. Let's take a look at the &hellip; <a href="/2020/07/26/upgrading-the-vcsa-with-an-iso/" class="more-link">Continue reading <span class="screen-reader-text">Upgrading the VCSA with an ISO</span> <span class="meta-nav">&rarr;</span></a></p>]]></content:encoded>
+					
+					<wfw:commentRss>/2020/07/26/upgrading-the-vcsa-with-an-iso/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">309</post-id>	</item>
+		<item>
+		<title>Horizon &#8211; Installing the Connection Server</title>
+		<link>/2020/07/26/horizon-7-12-installing-a-connection-server/</link>
+					<comments>/2020/07/26/horizon-7-12-installing-a-connection-server/#respond</comments>
+		
+		<dc:creator><![CDATA[VirTaylor]]></dc:creator>
+		<pubDate>Sun, 26 Jul 2020 22:15:21 +0000</pubDate>
+				<category><![CDATA[Horizon]]></category>
+		<category><![CDATA[VDI]]></category>
+		<category><![CDATA[Virtualization]]></category>
+		<guid isPermaLink="false">http://blog.ucadministrator.com/?p=292</guid>
+
+					<description><![CDATA[This is the first installment of a "Mini-Series" about VMware Horizon. I recently passed my VCP-DTM (Desktop and Mobility) and a lot of my knowledge came/comes from my home lab. If you are looking to install and play with Horizon this series will get you started! The connection server is at the center of any &#8230; <a href="/2020/07/26/horizon-7-12-installing-a-connection-server/" class="more-link">Continue reading <span class="screen-reader-text">Horizon &#8211; Installing the Connection Server</span> <span class="meta-nav">&#8594;</span></a>]]></description>
+										<content:encoded><![CDATA[<p>This is the first installment of a "Mini-Series" about VMware Horizon. I recently passed my VCP-DTM (Desktop and Mobility) and a lot of my knowledge came/comes from my home lab. If you are looking to install and play with Horizon this series will get you started! The connection server is at the center of any &hellip; <a href="/2020/07/26/horizon-7-12-installing-a-connection-server/" class="more-link">Continue reading <span class="screen-reader-text">Horizon &#8211; Installing the Connection Server</span> <span class="meta-nav">&rarr;</span></a></p>]]></content:encoded>
+					
+					<wfw:commentRss>/2020/07/26/horizon-7-12-installing-a-connection-server/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">292</post-id>	</item>
+		<item>
+		<title>Migrate VMNICs from vDS to vSS with ESXCLI (No vCenter)</title>
+		<link>/2020/05/21/migrate-vmnics-from-vds-to-vss-with-esxcli-no-vcenter/</link>
+		
+		<dc:creator><![CDATA[VirTaylor]]></dc:creator>
+		<pubDate>Thu, 21 May 2020 21:53:16 +0000</pubDate>
+				<category><![CDATA[ESXI]]></category>
+		<category><![CDATA[Virtualization]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<guid isPermaLink="false">http://blog.ucadministrator.com/?p=275</guid>
+
+					<description><![CDATA[Recently, I had to migrate my VMNIC bindings from my Distributed Switches to my Standard Switches. Since my vCenter instance was being restored from backup (Failed 7.0 Update), I had to revert back to the ESXCLI. Step 1: Validate Current vDS Switch Settings esxcli network vSwitch dvs vmware list Step 2: Remove NIC from vDS &#8230; <a href="/2020/05/21/migrate-vmnics-from-vds-to-vss-with-esxcli-no-vcenter/" class="more-link">Continue reading <span class="screen-reader-text">Migrate VMNICs from vDS to vSS with ESXCLI (No vCenter)</span> <span class="meta-nav">&#8594;</span></a>]]></description>
+										<content:encoded><![CDATA[<p>Recently, I had to migrate my VMNIC bindings from my Distributed Switches to my Standard Switches. Since my vCenter instance was being restored from backup (Failed 7.0 Update), I had to revert back to the ESXCLI. Step 1: Validate Current vDS Switch Settings esxcli network vSwitch dvs vmware list Step 2: Remove NIC from vDS &hellip; <a href="/2020/05/21/migrate-vmnics-from-vds-to-vss-with-esxcli-no-vcenter/" class="more-link">Continue reading <span class="screen-reader-text">Migrate VMNICs from vDS to vSS with ESXCLI (No vCenter)</span> <span class="meta-nav">&rarr;</span></a></p>]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">275</post-id>	</item>
+		<item>
+		<title>vExpert 2019</title>
+		<link>/2019/07/28/vexpert-2019/</link>
+					<comments>/2019/07/28/vexpert-2019/#respond</comments>
+		
+		<dc:creator><![CDATA[VirTaylor]]></dc:creator>
+		<pubDate>Mon, 29 Jul 2019 01:25:04 +0000</pubDate>
+				<category><![CDATA[vExpert]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<guid isPermaLink="false">http://blog.ucadministrator.com/?p=194</guid>
+
+					<description><![CDATA[Its is with great excitement that I have been chosen to be a vExpert for 2019. I can't explain how exciting this is for me. The vExpert certification has been something I have been going after for about 3 years since I started working with VMware and I am glad to finally be apart of &#8230; <a href="/2019/07/28/vexpert-2019/" class="more-link">Continue reading <span class="screen-reader-text">vExpert 2019</span> <span class="meta-nav">&#8594;</span></a>]]></description>
+										<content:encoded><![CDATA[<p>Its is with great excitement that I have been chosen to be a vExpert for 2019. I can't explain how exciting this is for me. The vExpert certification has been something I have been going after for about 3 years since I started working with VMware and I am glad to finally be apart of &hellip; <a href="/2019/07/28/vexpert-2019/" class="more-link">Continue reading <span class="screen-reader-text">vExpert 2019</span> <span class="meta-nav">&rarr;</span></a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2019/07/28/vexpert-2019/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">194</post-id>	</item>
+		<item>
+		<title>vSphere for Mobile</title>
+		<link>/2019/06/11/vsphere-for-mobile/</link>
+					<comments>/2019/06/11/vsphere-for-mobile/#respond</comments>
+		
+		<dc:creator><![CDATA[VirTaylor]]></dc:creator>
+		<pubDate>Wed, 12 Jun 2019 02:52:37 +0000</pubDate>
+				<category><![CDATA[vCenter]]></category>
+		<category><![CDATA[Virtualization]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<guid isPermaLink="false">http://blog.ucadministrator.com/?p=182</guid>
+
+					<description><![CDATA[Earlier this month VMWare releases a fling called vSphere Mobile Client. If you are unfamiliar with VMWare Flings, let me get you up to speed. A fling is an application or add-on that is created by VMWare Engineers that often solve a specific problem with the VMWare stack. Most flings will end up being converted &#8230; <a href="/2019/06/11/vsphere-for-mobile/" class="more-link">Continue reading <span class="screen-reader-text">vSphere for Mobile</span> <span class="meta-nav">&#8594;</span></a>]]></description>
+										<content:encoded><![CDATA[<p>Earlier this month VMWare releases a fling called vSphere Mobile Client. If you are unfamiliar with VMWare Flings, let me get you up to speed. A fling is an application or add-on that is created by VMWare Engineers that often solve a specific problem with the VMWare stack. Most flings will end up being converted &hellip; <a href="/2019/06/11/vsphere-for-mobile/" class="more-link">Continue reading <span class="screen-reader-text">vSphere for Mobile</span> <span class="meta-nav">&rarr;</span></a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2019/06/11/vsphere-for-mobile/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">182</post-id>	</item>
+		<item>
+		<title>Are you using content library&#8217;s? Cause you should be!</title>
+		<link>/2019/06/11/are-you-using-content-librarys-cause-you-should-be/</link>
+					<comments>/2019/06/11/are-you-using-content-librarys-cause-you-should-be/#respond</comments>
+		
+		<dc:creator><![CDATA[VirTaylor]]></dc:creator>
+		<pubDate>Wed, 12 Jun 2019 01:09:56 +0000</pubDate>
+				<category><![CDATA[vCenter]]></category>
+		<category><![CDATA[Virtualization]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<guid isPermaLink="false">http://blog.ucadministrator.com/?p=147</guid>
+
+					<description><![CDATA[Background A few versions back VMWare introduced Content Libraries as a way to store and organize data within your VMWare environment. Content Libraries allows admins to store common data (ISO Images, OVF Templates and Templates) in a central repository. Gone are the unorganized datastore folders and searching through each one to find the correct version &#8230; <a href="/2019/06/11/are-you-using-content-librarys-cause-you-should-be/" class="more-link">Continue reading <span class="screen-reader-text">Are you using content library&#8217;s? Cause you should be!</span> <span class="meta-nav">&#8594;</span></a>]]></description>
+										<content:encoded><![CDATA[<p>Background A few versions back VMWare introduced Content Libraries as a way to store and organize data within your VMWare environment. Content Libraries allows admins to store common data (ISO Images, OVF Templates and Templates) in a central repository. Gone are the unorganized datastore folders and searching through each one to find the correct version &hellip; <a href="/2019/06/11/are-you-using-content-librarys-cause-you-should-be/" class="more-link">Continue reading <span class="screen-reader-text">Are you using content library&#8217;s? Cause you should be!</span> <span class="meta-nav">&rarr;</span></a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2019/06/11/are-you-using-content-librarys-cause-you-should-be/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">147</post-id>	</item>
+		<item>
+		<title>Creating the port groups with PowerCLI</title>
+		<link>/2019/03/23/neccdc2019-creating-the-port-groups-with-powercli/</link>
+					<comments>/2019/03/23/neccdc2019-creating-the-port-groups-with-powercli/#respond</comments>
+		
+		<dc:creator><![CDATA[VirTaylor]]></dc:creator>
+		<pubDate>Sat, 23 Mar 2019 16:28:51 +0000</pubDate>
+				<category><![CDATA[Automation]]></category>
+		<category><![CDATA[Conferences]]></category>
+		<category><![CDATA[NECCDC]]></category>
+		<category><![CDATA[PowerCLI]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<guid isPermaLink="false">http://blog.ucadministrator.com/?p=121</guid>
+
+					<description><![CDATA[Now that NECCDC is over, I can share some details on how the environment was setup. More specifically how the virtual networking was setup. We had just about 35 vlans in total and all of them needed to be leveraged in the virtual environment for Red/White team jump boxes. I could have manually created 70 &#8230; <a href="/2019/03/23/neccdc2019-creating-the-port-groups-with-powercli/" class="more-link">Continue reading <span class="screen-reader-text">Creating the port groups with PowerCLI</span> <span class="meta-nav">&#8594;</span></a>]]></description>
+										<content:encoded><![CDATA[<p>Now that NECCDC is over, I can share some details on how the environment was setup. More specifically how the virtual networking was setup. We had just about 35 vlans in total and all of them needed to be leveraged in the virtual environment for Red/White team jump boxes. I could have manually created 70 &hellip; <a href="/2019/03/23/neccdc2019-creating-the-port-groups-with-powercli/" class="more-link">Continue reading <span class="screen-reader-text">Creating the port groups with PowerCLI</span> <span class="meta-nav">&rarr;</span></a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2019/03/23/neccdc2019-creating-the-port-groups-with-powercli/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">121</post-id>	</item>
+		<item>
+		<title>Fixing the Invalid Certificate on PowerCLI</title>
+		<link>/2019/02/23/quick-tip-fixing-the-invalid-certificate-on-powercli/</link>
+					<comments>/2019/02/23/quick-tip-fixing-the-invalid-certificate-on-powercli/#respond</comments>
+		
+		<dc:creator><![CDATA[VirTaylor]]></dc:creator>
+		<pubDate>Sun, 24 Feb 2019 03:19:48 +0000</pubDate>
+				<category><![CDATA[Automation]]></category>
+		<category><![CDATA[PowerCLI]]></category>
+		<category><![CDATA[vCenter]]></category>
+		<category><![CDATA[Virtualization]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<guid isPermaLink="false">http://blog.ucadministrator.com/?p=114</guid>
+
+					<description><![CDATA[I have recently been working on a fair bit of PowerCLI for a Cyber Defense competition called NECCDC. Every time, when I connect to vCenter, I receive this following error. This error occurs when the default VMWare certificates are not replaced with trusted/matching ones. To resolve this, you need to run the following command. Set-PowerCLIConfiguration &#8230; <a href="/2019/02/23/quick-tip-fixing-the-invalid-certificate-on-powercli/" class="more-link">Continue reading <span class="screen-reader-text">Fixing the Invalid Certificate on PowerCLI</span> <span class="meta-nav">&#8594;</span></a>]]></description>
+										<content:encoded><![CDATA[<p>I have recently been working on a fair bit of PowerCLI for a Cyber Defense competition called NECCDC. Every time, when I connect to vCenter, I receive this following error. This error occurs when the default VMWare certificates are not replaced with trusted/matching ones. To resolve this, you need to run the following command. Set-PowerCLIConfiguration &hellip; <a href="/2019/02/23/quick-tip-fixing-the-invalid-certificate-on-powercli/" class="more-link">Continue reading <span class="screen-reader-text">Fixing the Invalid Certificate on PowerCLI</span> <span class="meta-nav">&rarr;</span></a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2019/02/23/quick-tip-fixing-the-invalid-certificate-on-powercli/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">114</post-id>	</item>
+	</channel>
+</rss>

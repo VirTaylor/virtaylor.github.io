@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>Certification &#8211; Virtualized Taylor</title>
+	<atom:link href="/category/certification/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Networking - Virtualization - Security - Automation</description>
+	<lastBuildDate>Mon, 29 Jul 2019 01:27:34 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+
+<image>
+	<url>https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/05/cropped-3123876.png?fit=32%2C32&#038;ssl=1</url>
+	<title>Certification &#8211; Virtualized Taylor</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+<site xmlns="com-wordpress:feed-additions:1">158275011</site>	<item>
+		<title>vExpert 2019</title>
+		<link>/2019/07/28/vexpert-2019/</link>
+					<comments>/2019/07/28/vexpert-2019/#respond</comments>
+		
+		<dc:creator><![CDATA[VirTaylor]]></dc:creator>
+		<pubDate>Mon, 29 Jul 2019 01:25:04 +0000</pubDate>
+				<category><![CDATA[vExpert]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<guid isPermaLink="false">http://blog.ucadministrator.com/?p=194</guid>
+
+					<description><![CDATA[Its is with great excitement that I have been chosen to be a vExpert for 2019. I can't explain how exciting this is for me. The vExpert certification has been something I have been going after for about 3 years since I started working with VMware and I am glad to finally be apart of &#8230; <a href="/2019/07/28/vexpert-2019/" class="more-link">Continue reading <span class="screen-reader-text">vExpert 2019</span> <span class="meta-nav">&#8594;</span></a>]]></description>
+										<content:encoded><![CDATA[<p>Its is with great excitement that I have been chosen to be a vExpert for 2019. I can't explain how exciting this is for me. The vExpert certification has been something I have been going after for about 3 years since I started working with VMware and I am glad to finally be apart of &hellip; <a href="/2019/07/28/vexpert-2019/" class="more-link">Continue reading <span class="screen-reader-text">vExpert 2019</span> <span class="meta-nav">&rarr;</span></a></p>]]></content:encoded>
+					
+					<wfw:commentRss>/2019/07/28/vexpert-2019/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">194</post-id>	</item>
+	</channel>
+</rss>

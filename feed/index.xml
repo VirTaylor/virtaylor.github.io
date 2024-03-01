@@ -1,0 +1,1070 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>Virtualized Taylor</title>
+	<atom:link href="/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Networking - Virtualization - Security - Automation</description>
+	<lastBuildDate>Thu, 02 Nov 2023 14:13:08 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+
+<image>
+	<url>https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/05/cropped-3123876.png?fit=32%2C32&#038;ssl=1</url>
+	<title>Virtualized Taylor</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+<site xmlns="com-wordpress:feed-additions:1">158275011</site>	<item>
+		<title>CloudyRange &#8211; Part 1 &#8211; Synology DS723+ &#8211; Getting Started</title>
+		<link>/2023/05/15/cloudyrange-part-1-synology-ds723-getting-started/</link>
+					<comments>/2023/05/15/cloudyrange-part-1-synology-ds723-getting-started/#respond</comments>
+		
+		<dc:creator><![CDATA[VirTaylor]]></dc:creator>
+		<pubDate>Mon, 15 May 2023 14:45:09 +0000</pubDate>
+				<category><![CDATA[Storage]]></category>
+		<category><![CDATA[Synology]]></category>
+		<guid isPermaLink="false">https://virtualizedtaylor.com/?p=457</guid>
+
+					<description><![CDATA[Overview/Introduction With the help of Synology, I am embarking on the creation of a portable lab environment called CloudyRange. The objective of CloudyRange is to create a high performance lab environment that is small enough to fit in my backpack when traveling for work and be a small &#8220;cloud&#8221; as you may never know where &#8230; <a href="/2023/05/15/cloudyrange-part-1-synology-ds723-getting-started/" class="more-link">Continue reading <span class="screen-reader-text">CloudyRange &#8211; Part 1 &#8211; Synology DS723+ &#8211; Getting Started</span> <span class="meta-nav">&#8594;</span></a>]]></description>
+										<content:encoded><![CDATA[
+<p class="has-large-font-size">Overview/Introduction</p>
+
+
+
+<p>With the help of Synology, I am embarking on the creation of a portable lab environment called CloudyRange. The objective of CloudyRange is to create a high performance lab environment that is small enough to fit in my backpack when traveling for work and be a small &#8220;cloud&#8221; as you may never know where the data is at any point&#8230; At its core, the environment will consist of the following hardware:</p>
+
+
+
+<ul>
+<li>1 x Synology DS723 (2 x 960GB SSD)</li>
+
+
+
+<li>2 x NUC 11 (Core i7, 48GB RAM and 2TB SSD)</li>
+
+
+
+<li>1 x Unifi Flex Mini (Switch)</li>
+
+
+
+<li>1 x GL.iNet (Router, VPN and Access Point)</li>
+</ul>
+
+
+
+<p>Over the next three or four blog posts, we will look at the configuration items and requirements to build an ultra portable home lab that still has enough horsepower and flexibility to tackle any lab needs. This environment will be called &#8220;CloudyRange&#8221; and is inspired by faculty and staff at my alma mater.</p>
+
+
+
+<p class="has-large-font-size">Storage</p>
+
+
+
+<p>The core of any virtualization and Home Lab is the storage environment. Similar to my previously posts, the Storage of this lab environment was provided by Synology. Synology has some of the best NAS devices (my opinion) on the market ranging from the ultra portable to datacenter class devices/technology that leverage deep learning/AI to help with operational tasks like vehicle and people detection.</p>
+
+
+
+<p>For the purpose of this environment, they have sent over the <a href="https://www.synology.com/en-us/products/DS723+">DS723+</a> which is a compact two bay device that can deliver upwards of 471/225 MB/s of disk performance and 10G networking. </p>
+
+
+
+<div class="wp-block-cover is-light"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img fetchpriority="high" decoding="async" width="700" height="420" data-attachment-id="463" data-permalink="/2023/05/15/cloudyrange-part-1-synology-ds723-getting-started/image-5/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/image.png?fit=1281%2C769&amp;ssl=1" data-orig-size="1281,769" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="image" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/image.png?fit=300%2C180&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/image.png?fit=700%2C420&amp;ssl=1" class="wp-block-cover__image-background wp-image-463" alt="Photo from Synology.com" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/image.png?resize=700%2C420&#038;ssl=1" style="object-position:79% 13%" data-object-fit="cover" data-object-position="79% 13%" data-recalc-dims="1" /><div class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
+<p></p>
+</div></div>
+
+
+
+<p class="has-medium-font-size">Device Baseline</p>
+
+
+
+<p>We won&#8217;t spend too much time talking about the specifications of the DS723+ as more information can be provided on the <a href="https://www.synology.com/en-us/products/DS723+">product page from Synology linked here.</a> Let&#8217;s jump into the configuration and the out-of-box experience. </p>
+
+
+
+<p>After the device is unboxed and connected to power/network, you should be able to head over to <a href="https://find.synology.com/">https://find.synology.com/</a> which will automatically detect the new synology on your network. </p>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" width="700" height="401" data-attachment-id="467" data-permalink="/2023/05/15/cloudyrange-part-1-synology-ds723-getting-started/image-1-4/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/image-1.png?fit=1040%2C596&amp;ssl=1" data-orig-size="1040,596" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="image-1" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/image-1.png?fit=300%2C172&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/image-1.png?fit=700%2C401&amp;ssl=1" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/image-1.png?resize=700%2C401&#038;ssl=1" alt="" class="wp-image-467" data-recalc-dims="1" /></figure>
+
+
+
+<p>If you have a &#8220;more complex&#8221; network setup where your endpoint and NAS are on different VLANs/Subnets, you will have to look to your network monitoring solution/dhcp server to manually browse to the NAS. For me, I had these entries on my Unifi UDM Pro SE.</p>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" width="700" height="34" data-attachment-id="469" data-permalink="/2023/05/15/cloudyrange-part-1-synology-ds723-getting-started/screenshot-2023-05-13-at-10-13-15-am/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.13.15-am.png?fit=3354%2C164&amp;ssl=1" data-orig-size="3354,164" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="screenshot-2023-05-13-at-10.13.15-am" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.13.15-am.png?fit=300%2C15&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.13.15-am.png?fit=700%2C34&amp;ssl=1" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.13.15-am.png?resize=700%2C34&#038;ssl=1" alt="" class="wp-image-469" data-recalc-dims="1" /></figure>
+
+
+
+<p>Browsing to 10.24.253.195 brings up the initial install screen. </p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="700" height="399" data-attachment-id="471" data-permalink="/2023/05/15/cloudyrange-part-1-synology-ds723-getting-started/screenshot-2023-05-13-at-10-11-49-am/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.11.49-am.png?fit=2072%2C1182&amp;ssl=1" data-orig-size="2072,1182" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="screenshot-2023-05-13-at-10.11.49-am" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.11.49-am.png?fit=300%2C171&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.11.49-am.png?fit=700%2C399&amp;ssl=1" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.11.49-am.png?resize=700%2C399&#038;ssl=1" alt="" class="wp-image-471" data-recalc-dims="1" /></figure>
+
+
+
+<p>Synology has been working hard over the last few years to create an intuitive interface that everyone (including those outside of IT) can use and manage. </p>
+
+
+
+<p>After clicking &#8220;install&#8221; the DiskStation will pull the most recent version of Synology DiskStation Manger (DSM) from the internet unless you provide it a .pat file for manual updates.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="700" height="399" data-attachment-id="473" data-permalink="/2023/05/15/cloudyrange-part-1-synology-ds723-getting-started/screenshot-2023-05-13-at-10-12-07-am/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.12.07-am.png?fit=2082%2C1186&amp;ssl=1" data-orig-size="2082,1186" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="screenshot-2023-05-13-at-10.12.07-am" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.12.07-am.png?fit=300%2C171&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.12.07-am.png?fit=700%2C399&amp;ssl=1" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.12.07-am.png?resize=700%2C399&#038;ssl=1" alt="" class="wp-image-473" data-recalc-dims="1" /></figure>
+
+
+
+<p>The installation and upgrade takes about 3 minutes but be prepared to wait the full 10 minutes. The NAS will restart on its own once all the upgrades are complete.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="700" height="485" data-attachment-id="474" data-permalink="/2023/05/15/cloudyrange-part-1-synology-ds723-getting-started/screenshot-2023-05-13-at-10-12-47-am/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.12.47-am.png?fit=1690%2C1170&amp;ssl=1" data-orig-size="1690,1170" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="screenshot-2023-05-13-at-10.12.47-am" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.12.47-am.png?fit=300%2C208&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.12.47-am.png?fit=700%2C485&amp;ssl=1" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.12.47-am.png?resize=700%2C485&#038;ssl=1" alt="" class="wp-image-474" data-recalc-dims="1" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="700" height="410" data-attachment-id="476" data-permalink="/2023/05/15/cloudyrange-part-1-synology-ds723-getting-started/screenshot-2023-05-13-at-10-13-25-am/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.13.25-am.png?fit=1746%2C1022&amp;ssl=1" data-orig-size="1746,1022" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="screenshot-2023-05-13-at-10.13.25-am" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.13.25-am.png?fit=300%2C176&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.13.25-am.png?fit=700%2C410&amp;ssl=1" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.13.25-am.png?resize=700%2C410&#038;ssl=1" alt="" class="wp-image-476" data-recalc-dims="1" /></figure>
+
+
+
+<p>After 5-10 minutes, the configuration of the Synology can begin! Its important to note that if you have a configuration backup from a previous device, you can initiate the restore from here! </p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="700" height="399" data-attachment-id="478" data-permalink="/2023/05/15/cloudyrange-part-1-synology-ds723-getting-started/screenshot-2023-05-13-at-10-15-04-am/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.15.04-am.png?fit=2076%2C1182&amp;ssl=1" data-orig-size="2076,1182" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="screenshot-2023-05-13-at-10.15.04-am" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.15.04-am.png?fit=300%2C171&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.15.04-am.png?fit=700%2C399&amp;ssl=1" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.15.04-am.png?resize=700%2C399&#038;ssl=1" alt="" class="wp-image-478" data-recalc-dims="1" /></figure>
+
+
+
+<p>During the next few screens, you will be asked for information like hostname, username, password, update policy and Synology Account. These can be configured as required and in line with any personal preference. Synology does recommend to use something other than &#8220;admin&#8221; as the username as it can prevent/help with brute force attempts.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="700" height="400" data-attachment-id="481" data-permalink="/2023/05/15/cloudyrange-part-1-synology-ds723-getting-started/screenshot-2023-05-13-at-10-15-53-am/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.15.53-am.png?fit=2078%2C1186&amp;ssl=1" data-orig-size="2078,1186" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="screenshot-2023-05-13-at-10.15.53-am" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.15.53-am.png?fit=300%2C171&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.15.53-am.png?fit=700%2C400&amp;ssl=1" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.15.53-am.png?resize=700%2C400&#038;ssl=1" alt="" class="wp-image-481" data-recalc-dims="1" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="700" height="402" data-attachment-id="482" data-permalink="/2023/05/15/cloudyrange-part-1-synology-ds723-getting-started/screenshot-2023-05-13-at-10-16-33-am/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.16.33-am.png?fit=2080%2C1194&amp;ssl=1" data-orig-size="2080,1194" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="screenshot-2023-05-13-at-10.16.33-am" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.16.33-am.png?fit=300%2C172&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.16.33-am.png?fit=700%2C402&amp;ssl=1" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.16.33-am.png?resize=700%2C402&#038;ssl=1" alt="" class="wp-image-482" data-recalc-dims="1" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="700" height="399" data-attachment-id="484" data-permalink="/2023/05/15/cloudyrange-part-1-synology-ds723-getting-started/screenshot-2023-05-13-at-10-16-45-am/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.16.45-am.png?fit=2074%2C1182&amp;ssl=1" data-orig-size="2074,1182" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="screenshot-2023-05-13-at-10.16.45-am" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.16.45-am.png?fit=300%2C171&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.16.45-am.png?fit=700%2C399&amp;ssl=1" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.16.45-am.png?resize=700%2C399&#038;ssl=1" alt="" class="wp-image-484" data-recalc-dims="1" /></figure>
+
+
+
+<p>The use of a Synology Account is highly recommended as it enabled some addition features like QuickConnect and Monitoring. QuickConnect allows you to access your NAS from anywhere without the need of a VPN. </p>
+
+
+
+<p>At this point, the DS723+ will ask you if you want to enable device analytics and then bring you to the main desktop interface where you can start to configure things.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="700" height="400" data-attachment-id="487" data-permalink="/2023/05/15/cloudyrange-part-1-synology-ds723-getting-started/screenshot-2023-05-13-at-10-17-02-am/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.17.02-am.png?fit=2072%2C1184&amp;ssl=1" data-orig-size="2072,1184" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="screenshot-2023-05-13-at-10.17.02-am" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.17.02-am.png?fit=300%2C171&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.17.02-am.png?fit=700%2C400&amp;ssl=1" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.17.02-am.png?resize=700%2C400&#038;ssl=1" alt="" class="wp-image-487" data-recalc-dims="1" /></figure>
+
+
+
+<p class="has-large-font-size">Storage Pool and Volume</p>
+
+
+
+<p>There are two main storage concepts that are leveraged when provisioning a Synology DiskStation (or RackStation). These are Storage Pools and Volumes. The Storage Pool is a collection of disks that are configured in a &#8220;Protection Group&#8221;. Think of this as the &#8220;RAID&#8221; volume but with additional capabilities. The Volume is the partition that has the File System. </p>
+
+
+
+<p>When you first login to your NAS, you will have a pop-up to configured your first Storage Pool and Volume. </p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="700" height="391" data-attachment-id="490" data-permalink="/2023/05/15/cloudyrange-part-1-synology-ds723-getting-started/screenshot-2023-05-13-at-10-17-20-am/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.17.20-am.png?fit=3454%2C1930&amp;ssl=1" data-orig-size="3454,1930" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="screenshot-2023-05-13-at-10.17.20-am" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.17.20-am.png?fit=300%2C168&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.17.20-am.png?fit=700%2C391&amp;ssl=1" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.17.20-am.png?resize=700%2C391&#038;ssl=1" alt="" class="wp-image-490" data-recalc-dims="1" /></figure>
+
+
+
+<p>From there, you are able to use the On-Screen wizard to create the required Pool and Volume.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="700" height="482" data-attachment-id="491" data-permalink="/2023/05/15/cloudyrange-part-1-synology-ds723-getting-started/screenshot-2023-05-13-at-10-17-34-am/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.17.34-am.png?fit=1648%2C1134&amp;ssl=1" data-orig-size="1648,1134" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="screenshot-2023-05-13-at-10.17.34-am" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.17.34-am.png?fit=300%2C206&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.17.34-am.png?fit=700%2C482&amp;ssl=1" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.17.34-am.png?resize=700%2C482&#038;ssl=1" alt="" class="wp-image-491" data-recalc-dims="1" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="700" height="479" data-attachment-id="492" data-permalink="/2023/05/15/cloudyrange-part-1-synology-ds723-getting-started/screenshot-2023-05-13-at-10-17-47-am/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.17.47-am.png?fit=1656%2C1132&amp;ssl=1" data-orig-size="1656,1132" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="screenshot-2023-05-13-at-10.17.47-am" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.17.47-am.png?fit=300%2C205&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.17.47-am.png?fit=700%2C479&amp;ssl=1" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.17.47-am.png?resize=700%2C479&#038;ssl=1" alt="" class="wp-image-492" data-recalc-dims="1" /></figure>
+
+
+
+<p>Synology has a handful of options that can be used when only two drives are installed. They are as follows:</p>
+
+
+
+<ul>
+<li>SHR (Synology Hybrid Raid)</li>
+
+
+
+<li>RAID 1 (Mirror of Drives)</li>
+
+
+
+<li>Basic (Single Drive without Redundancy)</li>
+
+
+
+<li>JBOD (Multiple Drives without Redundancy)</li>
+
+
+
+<li>RAID 0 (Stripe of Drives without Redundancy)</li>
+</ul>
+
+
+
+<p>For my Lab environment, I will be using RAID-0 as  the Data is not important and will be backed up using Synology&#8217;s could service (future blog post). This is <strong>NOT </strong>recommended for production.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="700" height="481" data-attachment-id="496" data-permalink="/2023/05/15/cloudyrange-part-1-synology-ds723-getting-started/screenshot-2023-05-13-at-10-18-04-am/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.18.04-am.png?fit=1652%2C1134&amp;ssl=1" data-orig-size="1652,1134" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="screenshot-2023-05-13-at-10.18.04-am" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.18.04-am.png?fit=300%2C206&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.18.04-am.png?fit=700%2C481&amp;ssl=1" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.18.04-am.png?resize=700%2C481&#038;ssl=1" alt="" class="wp-image-496" data-recalc-dims="1" /></figure>
+
+
+
+<p>After selecting the &#8220;RAID Type&#8221; and &#8220;Description&#8221; you will select the drives that will be added to the Storage Pool. For devices that have more than 2 x Drives, you can absolutely create additional pools based on need. On my DS1621+ I have two pools that are split between SSD backed and HDD backed. </p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="700" height="479" data-attachment-id="498" data-permalink="/2023/05/15/cloudyrange-part-1-synology-ds723-getting-started/screenshot-2023-05-13-at-10-18-24-am/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.18.24-am.png?fit=1652%2C1130&amp;ssl=1" data-orig-size="1652,1130" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="screenshot-2023-05-13-at-10.18.24-am" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.18.24-am.png?fit=300%2C205&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.18.24-am.png?fit=700%2C479&amp;ssl=1" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.18.24-am.png?resize=700%2C479&#038;ssl=1" alt="" class="wp-image-498" data-recalc-dims="1" /></figure>
+
+
+
+<p>After selecting the drives, you will want to run the drive check and make sure everything is healthy. For smaller pools, the drive check will take a few minutes. </p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="700" height="479" data-attachment-id="500" data-permalink="/2023/05/15/cloudyrange-part-1-synology-ds723-getting-started/screenshot-2023-05-13-at-10-18-35-am/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.18.35-am.png?fit=1656%2C1134&amp;ssl=1" data-orig-size="1656,1134" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="screenshot-2023-05-13-at-10.18.35-am" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.18.35-am.png?fit=300%2C205&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.18.35-am.png?fit=700%2C479&amp;ssl=1" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.18.35-am.png?resize=700%2C479&#038;ssl=1" alt="" class="wp-image-500" data-recalc-dims="1" /></figure>
+
+
+
+<p>After the Drive check, its time to create the Volume. As stated earlier, the Volume is where the File System (BTRFS) is created. Storage Pools can have multiple volumes but for this environment, we will use the maximum amount of space and then select the recommended file system on the next screen.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="700" height="479" data-attachment-id="503" data-permalink="/2023/05/15/cloudyrange-part-1-synology-ds723-getting-started/screenshot-2023-05-13-at-10-19-02-am/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.19.02-am.png?fit=1656%2C1134&amp;ssl=1" data-orig-size="1656,1134" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="screenshot-2023-05-13-at-10.19.02-am" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.19.02-am.png?fit=300%2C205&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.19.02-am.png?fit=700%2C479&amp;ssl=1" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.19.02-am.png?resize=700%2C479&#038;ssl=1" alt="" class="wp-image-503" data-recalc-dims="1" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="700" height="479" data-attachment-id="504" data-permalink="/2023/05/15/cloudyrange-part-1-synology-ds723-getting-started/screenshot-2023-05-13-at-10-19-15-am/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.19.15-am.png?fit=1654%2C1132&amp;ssl=1" data-orig-size="1654,1132" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="screenshot-2023-05-13-at-10.19.15-am" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.19.15-am.png?fit=300%2C205&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.19.15-am.png?fit=700%2C479&amp;ssl=1" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.19.15-am.png?resize=700%2C479&#038;ssl=1" alt="" class="wp-image-504" data-recalc-dims="1" /></figure>
+
+
+
+<p>Confirm your settings and then apply!</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="700" height="477" data-attachment-id="506" data-permalink="/2023/05/15/cloudyrange-part-1-synology-ds723-getting-started/screenshot-2023-05-13-at-10-19-27-am/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.19.27-am.png?fit=1650%2C1124&amp;ssl=1" data-orig-size="1650,1124" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="screenshot-2023-05-13-at-10.19.27-am" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.19.27-am.png?fit=300%2C204&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.19.27-am.png?fit=700%2C477&amp;ssl=1" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.19.27-am.png?resize=700%2C477&#038;ssl=1" alt="" class="wp-image-506" data-recalc-dims="1" /></figure>
+
+
+
+<p>At this point, all of your pool and volume settings should be configured and you will be able to check on the &#8220;Disk Check&#8221; by using the &#8220;Storage Manager&#8221; application in the menubar or desktop. </p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="700" height="405" data-attachment-id="508" data-permalink="/2023/05/15/cloudyrange-part-1-synology-ds723-getting-started/screenshot-2023-05-13-at-10-20-27-am/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.20.27-am.png?fit=2408%2C1394&amp;ssl=1" data-orig-size="2408,1394" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="screenshot-2023-05-13-at-10.20.27-am" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.20.27-am.png?fit=300%2C174&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.20.27-am.png?fit=700%2C405&amp;ssl=1" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.20.27-am.png?resize=700%2C405&#038;ssl=1" alt="" class="wp-image-508" data-recalc-dims="1" /></figure>
+
+
+
+<p class="has-large-font-size">Shared Folders</p>
+
+
+
+<p>In order to access this storage from a VMware client, we need to configured a Shared Folder (NFS) or ISCSI LUN. This environment will be primarily use NFS to simplify the network configuration in this converged setup. </p>
+
+
+
+<p>The creation of Shared Folders is done within the Control Panel. The Control Panel is another application located in the menu bar or desktop of your Synology Disk Station. </p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="700" height="398" data-attachment-id="510" data-permalink="/2023/05/15/cloudyrange-part-1-synology-ds723-getting-started/screenshot-2023-05-13-at-10-21-10-am/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.21.10-am.png?fit=2308%2C1312&amp;ssl=1" data-orig-size="2308,1312" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="screenshot-2023-05-13-at-10.21.10-am" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.21.10-am.png?fit=300%2C171&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.21.10-am.png?fit=700%2C398&amp;ssl=1" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.21.10-am.png?resize=700%2C398&#038;ssl=1" alt="" class="wp-image-510" data-recalc-dims="1" /></figure>
+
+
+
+<p>Under the &#8220;Create&#8221; Menu you will have the ability to &#8220;Create Shared Folder&#8221;.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="506" height="308" data-attachment-id="512" data-permalink="/2023/05/15/cloudyrange-part-1-synology-ds723-getting-started/screenshot-2023-05-13-at-10-21-27-am/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.21.27-am.png?fit=506%2C308&amp;ssl=1" data-orig-size="506,308" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="screenshot-2023-05-13-at-10.21.27-am" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.21.27-am.png?fit=300%2C183&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.21.27-am.png?fit=506%2C308&amp;ssl=1" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.21.27-am.png?resize=506%2C308&#038;ssl=1" alt="" class="wp-image-512" data-recalc-dims="1" /></figure>
+
+
+
+<p>The similar user experience is carried over to the folder creation workflow. We can enter a name and descripotion and then move to the finish page (skipping encryption, advanced settings and permissions)</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="700" height="513" data-attachment-id="514" data-permalink="/2023/05/15/cloudyrange-part-1-synology-ds723-getting-started/screenshot-2023-05-13-at-10-21-41-am/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.21.41-am.png?fit=1614%2C1182&amp;ssl=1" data-orig-size="1614,1182" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="screenshot-2023-05-13-at-10.21.41-am" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.21.41-am.png?fit=300%2C220&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.21.41-am.png?fit=700%2C513&amp;ssl=1" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.21.41-am.png?resize=700%2C513&#038;ssl=1" alt="" class="wp-image-514" data-recalc-dims="1" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="700" height="235" data-attachment-id="517" data-permalink="/2023/05/15/cloudyrange-part-1-synology-ds723-getting-started/screenshot-2023-05-13-at-10-22-45-am/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.22.45-am.png?fit=1816%2C610&amp;ssl=1" data-orig-size="1816,610" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="screenshot-2023-05-13-at-10.22.45-am" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.22.45-am.png?fit=300%2C101&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.22.45-am.png?fit=700%2C235&amp;ssl=1" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.22.45-am.png?resize=700%2C235&#038;ssl=1" alt="" class="wp-image-517" data-recalc-dims="1" /></figure>
+
+
+
+<p>You may have asked/thought &#8220;Why are we skipping permissions if we are going to use this for NFS?&#8221; That is because NFS permission are handled differently from SMB/File Permissions. Within the Edit menu on the Shared Folder, there is a special tab for NFS. </p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="700" height="482" data-attachment-id="519" data-permalink="/2023/05/15/cloudyrange-part-1-synology-ds723-getting-started/screenshot-2023-05-13-at-10-22-59-am/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.22.59-am.png?fit=1730%2C1190&amp;ssl=1" data-orig-size="1730,1190" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="screenshot-2023-05-13-at-10.22.59-am" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.22.59-am.png?fit=300%2C206&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.22.59-am.png?fit=700%2C482&amp;ssl=1" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.22.59-am.png?resize=700%2C482&#038;ssl=1" alt="" class="wp-image-519" data-recalc-dims="1" /></figure>
+
+
+
+<p>As you can see, by default NFS is disabled but Synology provides a link to the Settings page that will enable the service. </p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="700" height="264" data-attachment-id="521" data-permalink="/2023/05/15/cloudyrange-part-1-synology-ds723-getting-started/screenshot-2023-05-13-at-10-23-26-am/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.23.26-am.png?fit=1348%2C508&amp;ssl=1" data-orig-size="1348,508" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="screenshot-2023-05-13-at-10.23.26-am" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.23.26-am.png?fit=300%2C113&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.23.26-am.png?fit=700%2C264&amp;ssl=1" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.23.26-am.png?resize=700%2C264&#038;ssl=1" alt="" class="wp-image-521" data-recalc-dims="1" /></figure>
+
+
+
+<p>While it is not required, I updated the &#8220;Max Version&#8221; to NFSv4.1 to allow MultiPathing. After the service is enabled, we can go back to the NFS settings and enable communication.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="700" height="508" data-attachment-id="523" data-permalink="/2023/05/15/cloudyrange-part-1-synology-ds723-getting-started/screenshot-2023-05-13-at-10-23-54-am/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.23.54-am.png?fit=1116%2C810&amp;ssl=1" data-orig-size="1116,810" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="screenshot-2023-05-13-at-10.23.54-am" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.23.54-am.png?fit=300%2C218&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.23.54-am.png?fit=700%2C508&amp;ssl=1" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.23.54-am.png?resize=700%2C508&#038;ssl=1" alt="" class="wp-image-523" data-recalc-dims="1" /></figure>
+
+
+
+<p>For the Lab environment, allowing 0.0.0.0/0 (ANY) to Read/Write is sufficient and prevents any future updates from being required. You can create additional rules if you would prefer to lock this down. This is recommended for production.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="700" height="482" data-attachment-id="525" data-permalink="/2023/05/15/cloudyrange-part-1-synology-ds723-getting-started/screenshot-2023-05-13-at-10-24-05-am/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.24.05-am.png?fit=1730%2C1192&amp;ssl=1" data-orig-size="1730,1192" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="screenshot-2023-05-13-at-10.24.05-am" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.24.05-am.png?fit=300%2C207&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.24.05-am.png?fit=700%2C482&amp;ssl=1" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2023/05/screenshot-2023-05-13-at-10.24.05-am.png?resize=700%2C482&#038;ssl=1" alt="" class="wp-image-525" data-recalc-dims="1" /></figure>
+
+
+
+<p class="has-large-font-size">Conclusion</p>
+
+
+
+<p>At this point, we have successfully configured and baselined the Synology DS723+ for use in our lab environment. The next step will be the hypervisor configuration (ESXI on Intel NUC) and validate connectivity via NFS with the deployment of vCenter. </p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2023/05/15/cloudyrange-part-1-synology-ds723-getting-started/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">457</post-id>	</item>
+		<item>
+		<title>Synology DS1621+ &#8211; An Awesome NAS! Even Better with VMware!</title>
+		<link>/2021/07/12/synology-ds1621-an-awesome-nas-even-better-with-vmware/</link>
+					<comments>/2021/07/12/synology-ds1621-an-awesome-nas-even-better-with-vmware/#respond</comments>
+		
+		<dc:creator><![CDATA[VirTaylor]]></dc:creator>
+		<pubDate>Tue, 13 Jul 2021 02:01:02 +0000</pubDate>
+				<category><![CDATA[Storage]]></category>
+		<category><![CDATA[Synology]]></category>
+		<guid isPermaLink="false">https://virtualizedtaylor.com/?p=362</guid>
+
+					<description><![CDATA[After taking a little break while moving and getting ramped up on some large project at work, I am excited to jump back in to the Blog. This time we are going to be taking a look at the Synology DS1621+ that was graciously sent over by Synology! I am beyond excited to be working &#8230; <a href="/2021/07/12/synology-ds1621-an-awesome-nas-even-better-with-vmware/" class="more-link">Continue reading <span class="screen-reader-text">Synology DS1621+ &#8211; An Awesome NAS! Even Better with VMware!</span> <span class="meta-nav">&#8594;</span></a>]]></description>
+										<content:encoded><![CDATA[
+<p>After taking a little break while moving and getting ramped up on some large project at work, I am excited to jump back in to the Blog. This time we are going to be taking a look at the Synology DS1621+ that was graciously sent over by Synology! I am beyond excited to be working with Synology and have been hard at work testing, evaluating and integrating this NAS into my Home VMware Environment. To get this out of the way, this device is awesome!</p>
+
+
+
+<p>The DS1621+ is the latest revision of the Synology Diskstation and is classified as a &#8220;powerful, versatile and scalable&#8221; Network Attached Storage device according to Synology and I couldn&#8217;t agree more! For Starters, this is a 6 Bay Storage Device (Option to Expand to 16 Drives with 2 x Synology DX517) that is powered by a Quad Core AMD Ryzen Processor. The unit also comes with 4 x 1GB ports that can be used and configured for link aggregation. If you are looking for some additional connectivity (Maybe 10G) there is a single PCI Slot that can house an optional network card. </p>
+
+
+
+<p>Along side of the 6 x Local Drive Bays, the DS1621+ also has two M.2 Slots inside that can be used for Caching Purposes using the builtin disk station software. </p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="700" height="322" data-attachment-id="443" data-permalink="/image-1-1/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2021/07/image-1-1.png?fit=2476%2C1140&amp;ssl=1" data-orig-size="2476,1140" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="image-1-1" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2021/07/image-1-1.png?fit=300%2C138&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2021/07/image-1-1.png?fit=700%2C322&amp;ssl=1" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2021/07/image-1-1.png?resize=700%2C322&#038;ssl=1" alt="" class="wp-image-443" data-recalc-dims="1" /><figcaption>Photo Credit of Synology<br><a href="https://www.synology.com/en-us/products/DS1621+" rel="nofollow">https://www.synology.com/en-us/products/DS1621+</a></figcaption></figure>
+
+
+
+<p>As you can see within the pictures, this is a pretty slick and compact unit. It is about the size of two Nintendo Switches. It fits as perfectly on a Rack Mount Shelf as it does on a standard desktop. My setup is as follows:</p>
+
+
+
+<ul><li>1 x Synology DS1621+</li><li>4 x Seagate IronWolf Pro 4TB Drives</li><li>2 x Seagate IronWold Pro 2TB Drives </li><li>2 x Synology SNV3400-800G Drives (NVMe Cache)</li><li>1 x E10G21-F2 Network Expansion Card (2 x SFP+)</li></ul>
+
+
+
+<p>With this setup, while connected to VMware via ISCSI, I am able to get results (through Atto) that are exceeding 2GB/s with certain workloads/file sizes. This is of course on the volume that is fronted by the NVMe Cache but 900MB/s is still very impressive on Hard Drives. All of my testing has been with Dual 10G connections per device operating with MultiPathing enabled.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="700" height="422" data-attachment-id="435" data-permalink="/image-4/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2021/07/image.png?fit=2124%2C1280&amp;ssl=1" data-orig-size="2124,1280" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="image" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2021/07/image.png?fit=300%2C181&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2021/07/image.png?fit=700%2C422&amp;ssl=1" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2021/07/image.png?resize=700%2C422&#038;ssl=1" alt="" class="wp-image-435" data-recalc-dims="1" /><figcaption>HDD Only (Left), HDD w/NVMe Cache (Right)</figcaption></figure>
+
+
+
+<p>In future posts, we will be looking closer into the benchmarks using programs like IOMeter and iPerf3 which are both highly recognized in the industry for measuring IO operations. </p>
+
+
+
+<p>Outside of Benchmarks, Synology packs a TON of capability into their systems though their DSM Software which is currently on the 7th version. Version 7.0 bring a lot of additional performance and management capabilities especially when using the device as a SAN. For the first time FibreChannel Storage will be supported on a handful of models (XS, SA and FS) and you can even manage/monitor your NAS through a VMWare Plugin! There are even additional secure identify options that can be implemented. Things like app-based login approval and hardware security keys.</p>
+
+
+
+<p>Like with past versions, most of this capability is freely available through their Package Manager. Applications like Cloud Sync, HyperBackup and Virtual Machine Manager allow us to configure data replication to cloud providers, local endpoint backup and virtual machines. Yes! That is right! You can run virtual machines on your Synology! This sounds like a perfect use case for the vSAN or Hyperflex Witness Node!</p>
+
+
+
+<p>Stay tuned for future posts as we will look at configuring all of this and much much more! If you are interested in learning more about the Synology DS1621+ check out the <a href="https://global.download.synology.com/download/Document/Hardware/DataSheet/DiskStation/21-year/DS1621+/enu/Synology_DS1621_Plus_Data_Sheet_enu.pdf?_ga=2.80619543.1060102403.1626133919-2139522709.1626133919">data sheet</a>!</p>
+
+
+
+<p></p>
+
+
+
+<p></p>
+
+
+
+<p></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2021/07/12/synology-ds1621-an-awesome-nas-even-better-with-vmware/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">362</post-id>	</item>
+		<item>
+		<title>Automating CSR and ESXI Deployments with Ansible!</title>
+		<link>/2020/12/05/automating-csr-and-esxi-deployments-with-ansible/</link>
+					<comments>/2020/12/05/automating-csr-and-esxi-deployments-with-ansible/#respond</comments>
+		
+		<dc:creator><![CDATA[VirTaylor]]></dc:creator>
+		<pubDate>Sat, 05 Dec 2020 21:05:51 +0000</pubDate>
+				<category><![CDATA[Ansible]]></category>
+		<category><![CDATA[Automation]]></category>
+		<category><![CDATA[Cisco]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<guid isPermaLink="false">http://virtualizedtaylor.com/?p=346</guid>
+
+					<description><![CDATA[Labbing is an important way to improve your skills and gain experiences with new technologies! There are tons of ways to Lab with a lot of professionals transitioning from Physical to Virtual Labs especially with CML, GNS3 and EVE-NG. In my Lab, I have been using a lot of Virtual Appliances (CSR, FTDv, PALOv, ESXI, &#8230; <a href="/2020/12/05/automating-csr-and-esxi-deployments-with-ansible/" class="more-link">Continue reading <span class="screen-reader-text">Automating CSR and ESXI Deployments with Ansible!</span> <span class="meta-nav">&#8594;</span></a>]]></description>
+										<content:encoded><![CDATA[
+<p>Labbing is an important way to improve your skills and gain experiences with new technologies! There are tons of ways to Lab with a lot of professionals transitioning from Physical to Virtual Labs especially with CML, GNS3 and EVE-NG. In my Lab, I have been using a lot of Virtual Appliances (CSR, FTDv, PALOv, ESXI, etc) as I prefer to run directly on the Hypervisor/Network without introducing additional layers of virtualization if possible. </p>
+
+
+
+<p>When running directly on the hypervisor/network, you lose the ability to &#8220;drag a router&#8221; onto your topology and cable it up. Instead you need to deploy an OVA and populate all the parameters before it is ready to go. Doing this once or twice is fine but if you are looking to deploy 10 virtual CSRs it becomes a lot of repeat clicking and importing. <strong>So I automated this with Ansible</strong>!</p>
+
+
+
+<p>This code is publically available on <a href="https://github.com/VirTaylor/deploy_ova_public">my github (@VirTaylor)</a>! It is currently set up for the CSRs running IOS XE 17.2 as well as the Nested ESXI OVA that has been made famous by <a href="https://www.virtuallyghetto.com/nested-virtualization/nested-esxi-virtual-appliance">William Lam at VirtuallyGhetto.</a> I have plans to create/update to support the deployment of FTDv and PALOv but in theory this could be adapted to deploy an OVA. Lets see how it works!</p>
+
+
+
+<p>At the core, the playbooks leveragte the community.vmware collection that is available from <a href="https://galaxy.ansble.com/" rel="nofollow">https://galaxy.ansble.com/</a>. This allows the &#8220;deploy_ovf&#8221; module to be called within the playbook. I have structured all the tasks in each of the &#8220;main.yml&#8221; files to leverage variables which are defined and controlled in the &#8220;answerfile.yml&#8221;.</p>
+
+
+
+<pre class="wp-block-syntaxhighlighter-code"># Infrastructure
+vcenter: "enter-fqdn-or-ip-of-vcenter" # vcsa.lab.local
+vc_user: "enter-username-of-ansible-account-to-deploy-ova" # administrator@vsphere.local
+vc_pass: "enter-password-of-ansible-account-to-deploy-ova" # Password123
+vc_dc: "enter-name-of-destination-dataceter" # Lab Datacenter
+vc_cluster: "enter-name-of-destination-cluster" # Lab Cluster
+datastore: "enter-name-destination-datastore" # datastore1
+
+# CSR Deployment Options
+csr_abs_ova_path: "enter-absolute-path-of-ova" # /mnt/s/Cisco/csr1000v-universalk9.17.02.02.ova
+csr_folder: "enter-vsphere-folder-path-for-organizartion" # Datacenter/vm/CSR
+csr_gig1: "enter-port-group-for-interface3" # VM Network
+csr_gig2: "enter-port-group-for-interface1" # VM Network
+csr_gig3: "enter-port-group-for-interface3" # VM Network
+csr_admin_username: "enter-default-admin-username" # admin
+csr_admin_password: "enter-default-admin-password" # Password123
+csr_domain_name: "enter-domain-name" # lab.local
+csr_mgmt_mask: "enter-mgmt-subnet-mask" # 255.255.255.0
+csr_enable_password: "enter-enable-password" # Enable123
+csr_license_level: "ax" # ax
+csr_mgmt_gateway: "enter-mgmt-gateway" # 10.10.10.1
+
+# ESXI Deployment Options
+esxi_abs_ova_path: "enter-absolute-path-of-ova" # /mnt/s/ESXI/Nested_ESXi7.0u1_Appliance_Template_v1.ova
+esxi_folder: "enter-vsphere-folder-path-for-organizartion" # Datacenter/vm/ESXI
+esxi_int: "enter-port-group-for-interface" # VM Network
+esxi_root_password: "enter-nexted-esxi-root-password" # Password123
+esxi_domain_name: "enter-domain-name" # lab.local
+esxi_mgmt_mask: enter-mgmt-subnet-mask" # 255.255.255.0
+esxi_mgmt_gateway: "enter-mgmt-gateway" # 10.10.10.1
+esxi_mgmt_vlan: "enter-mgmt-vlan-id" # 1
+esxi_dns_servers: "enter-dns-servers-comma-seperated" # 10.10.10.1, 10.10.10.2</pre>
+
+
+
+<p>These values are referenced during the deployment/configuration of the Virtual Appliances. You may be wondering how we are able to configure the appliance during deployment. With every OVA, there are a series of &#8220;VAPP Properties&#8221; that are defined and then passed through to the VM during the boot process. You can view these values by going to the following configuration path within vCenter.</p>
+
+
+
+<p>Name of Virtual Machine -&gt; Configure -&gt; Settings -&gt; VAPP Properties. If you are looking at a CSR, it will look something like this:</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="700" height="217" data-attachment-id="353" data-permalink="/screen-shot-2020-12-05-at-3-41-02-pm/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/12/screen-shot-2020-12-05-at-3.41.02-pm.png?fit=2672%2C830&amp;ssl=1" data-orig-size="2672,830" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="screen-shot-2020-12-05-at-3.41.02-pm" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/12/screen-shot-2020-12-05-at-3.41.02-pm.png?fit=300%2C93&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/12/screen-shot-2020-12-05-at-3.41.02-pm.png?fit=700%2C217&amp;ssl=1" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/12/screen-shot-2020-12-05-at-3.41.02-pm.png?resize=700%2C217&#038;ssl=1" alt="" class="wp-image-353" data-recalc-dims="1" /><figcaption>VAPP Properties of a Virtual Cloud Service Router</figcaption></figure>
+
+
+
+<p>These values are setup as a Key Value Pair and are also visable when you deploy the OVA Manual. Often there are additional keys that can be leveraged and understood by the deployment. For example the CSRs will understand the following:</p>
+
+
+
+<pre class="wp-block-syntaxhighlighter-code"> id: com.cisco.csr1000v.ios-config-000X.1
+ type: string
+ value: insert_standard_ios_configuration_here</pre>
+
+
+
+<p>This allows you to enter any IOS configuration that is installed to the configuration on first bootup. I am using this to create a Management VRF and configure GigabitEthernet3 as the Management Interface. The options are endless, you can theoretically pass the configuration for TACACS or your initial dynamic routing configuration. Just make sure to increment the X in the ID for each command (1 being the first command).</p>
+
+
+
+<p>So how do I run this in my environment?</p>
+
+
+
+<p>First you should validate that you have installed the various packages that are listed in the repository on github. Then you will want to update the answerfile.yml and inventory file to match your environment and specifications. You may be required to download the appropriate OVAs if those are not readily available. If you are only using this code to deploy the CSRs, you can skip the handful of variables that are within the ESXI Deployment section. When it is time to run the playbook, use the following command:</p>
+
+
+
+<pre class="wp-block-syntaxhighlighter-code">ansible-playbook deploy_ova.yml -i inventory -l &lt;host_group&gt;</pre>
+
+
+
+<p>The &#8220;-l &lt;host_group&gt; is not required if you have a clean and commented inventory file. </p>
+
+
+
+<p>Reach out on Twitter (@VirTaylor) if you are using my code. I want to know the things that work well and the things that do not work at all! Intend to keep expanding on this to include additional products! If you have any recommendations do not be shy!</p>
+
+
+
+<p>Happy Automating!</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2020/12/05/automating-csr-and-esxi-deployments-with-ansible/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">346</post-id>	</item>
+		<item>
+		<title>Upgrade to ESXI 7.0 U1 with the CLI</title>
+		<link>/2020/11/01/upgrade-to-esxi-7-0-u1-with-the-cli/</link>
+					<comments>/2020/11/01/upgrade-to-esxi-7-0-u1-with-the-cli/#respond</comments>
+		
+		<dc:creator><![CDATA[VirTaylor]]></dc:creator>
+		<pubDate>Sun, 01 Nov 2020 15:58:39 +0000</pubDate>
+				<category><![CDATA[ESXI]]></category>
+		<category><![CDATA[Virtualization]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<guid isPermaLink="false">http://virtualizedtaylor.com/?p=328</guid>
+
+					<description><![CDATA[ESXI 7.0 U1 is here and it is time to upgrade! Normally upgrading ESXI would involve Update Manager and vCenter but in a situation where you have a single host and vCenter runs on that host, your upgrade options are limited. To start the upgrade process, you will need to download and upload (to a &#8230; <a href="/2020/11/01/upgrade-to-esxi-7-0-u1-with-the-cli/" class="more-link">Continue reading <span class="screen-reader-text">Upgrade to ESXI 7.0 U1 with the CLI</span> <span class="meta-nav">&#8594;</span></a>]]></description>
+										<content:encoded><![CDATA[
+<p>ESXI 7.0 U1 is here and it is time to upgrade! Normally upgrading ESXI would involve Update Manager and vCenter but in a situation where you have a single host and vCenter runs on that host, your upgrade options are limited.</p>
+
+
+
+<p>To start the upgrade process, you will need to download and upload (to a datastore) the offline bundle. These bundles can be found from the my.vmware.com, VMUG or vExpert download portals. Once the bundle is downloaded, you will need to upload to the datastore using the upload button.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img loading="lazy" decoding="async" width="700" height="80" data-attachment-id="331" data-permalink="/image-3/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/11/image.png?fit=939%2C107&amp;ssl=1" data-orig-size="939,107" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="image" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/11/image.png?fit=300%2C34&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/11/image.png?fit=700%2C80&amp;ssl=1" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/11/image.png?resize=700%2C80&#038;ssl=1" alt="" class="wp-image-331" data-recalc-dims="1" /></figure></div>
+
+
+
+<p>After the upload is complete, it is time to kick off the upgrade. Start by SSHing to your ESXI host. You may have to enable SSH as it is disabled by default. This can be done by navigating to Host -&gt; Actions -&gt; Services -&gt; Enable Secure Shell (SSH). Your SSH session should look something like this:</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img loading="lazy" decoding="async" width="697" height="368" data-attachment-id="336" data-permalink="/image-2-2/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/11/image-2.png?fit=697%2C368&amp;ssl=1" data-orig-size="697,368" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="image-2" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/11/image-2.png?fit=300%2C158&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/11/image-2.png?fit=697%2C368&amp;ssl=1" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/11/image-2.png?resize=697%2C368&#038;ssl=1" alt="" class="wp-image-336" data-recalc-dims="1" /></figure></div>
+
+
+
+<p>Once an SSH connection is established, we can enter Maintenance Mode with the following command:</p>
+
+
+
+<pre class="wp-block-code"><code>vim-cmd /hostsvs/maintenance_mode_enter</code></pre>
+
+
+
+<p>This command kicks off the equivalent tasks as the &#8220;Enter Maintenance Mode&#8221; from the GUI. Once the host is in Maintenance Mode, the upgrade can be initiated using the following command:</p>
+
+
+
+<pre class="wp-block-code"><code>esxcli software vib update -d /vmfs/volumes/datastore-name/offline-bundle-name.zip</code></pre>
+
+
+
+<p>The main command that we are using is &#8220;esxcli software vib update&#8221;. The -d switch informs the command where the offline bundle is located. This portion should be updated to match your environment. The install will take a few minutes but once it is complete, the shell prompt will return.</p>
+
+
+
+<p>After the prompt has returned, you can initiate the following command to reboot the host:</p>
+
+
+
+<pre class="wp-block-code"><code>reboot</code></pre>
+
+
+
+<p> Once the reboot is successful and complete. The host will be running your newly installed version!</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img loading="lazy" decoding="async" width="570" height="194" data-attachment-id="338" data-permalink="/image-3-2/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/11/image-3.png?fit=570%2C194&amp;ssl=1" data-orig-size="570,194" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="image-3" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/11/image-3.png?fit=300%2C102&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/11/image-3.png?fit=570%2C194&amp;ssl=1" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/11/image-3.png?resize=570%2C194&#038;ssl=1" alt="" class="wp-image-338" data-recalc-dims="1" /></figure></div>
+
+
+
+<p>The offline bundle is a great way to upgrade single node or non-vcenter environments without breaking out the KVM/USB Drives!</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2020/11/01/upgrade-to-esxi-7-0-u1-with-the-cli/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">328</post-id>	</item>
+		<item>
+		<title>Upgrading the VCSA with an ISO</title>
+		<link>/2020/07/26/upgrading-the-vcsa-with-an-iso/</link>
+					<comments>/2020/07/26/upgrading-the-vcsa-with-an-iso/#respond</comments>
+		
+		<dc:creator><![CDATA[VirTaylor]]></dc:creator>
+		<pubDate>Sun, 26 Jul 2020 22:37:17 +0000</pubDate>
+				<category><![CDATA[Technology]]></category>
+		<category><![CDATA[vCenter]]></category>
+		<category><![CDATA[Virtualization]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<guid isPermaLink="false">http://blog.ucadministrator.com/?p=309</guid>
+
+					<description><![CDATA[vCenter 7 is here! vCenter 7 is here! vCenter 7 is here! Let&#8217;s Patch! Alright it&#8217;s been a few months since vCenter 7 has been released, and there have been a few patches that have been released since Day 1 to fix some of the graphical and runtime issues. Let&#8217;s take a look at the &#8230; <a href="/2020/07/26/upgrading-the-vcsa-with-an-iso/" class="more-link">Continue reading <span class="screen-reader-text">Upgrading the VCSA with an ISO</span> <span class="meta-nav">&#8594;</span></a>]]></description>
+										<content:encoded><![CDATA[
+<p>vCenter 7 is here! vCenter 7 is here! vCenter 7 is here! Let&#8217;s Patch!</p>
+
+
+
+<p>Alright it&#8217;s been a few months since vCenter 7 has been released, and there have been a few patches that have been released since Day 1 to fix some of the graphical and runtime issues. Let&#8217;s take a look at the patching process from ISO. </p>
+
+
+
+<p><strong>Step 1: </strong>Download the Patch ISO from <a href="https://my.vmware.com/group/vmware/patch">https://my.vmware.com/group/vmware/patch</a></p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="700" height="367" data-attachment-id="312" data-permalink="/image-2/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/image-2.png?fit=2402%2C1258&amp;ssl=1" data-orig-size="2402,1258" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="image-2" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/image-2.png?fit=300%2C157&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/image-2.png?fit=700%2C367&amp;ssl=1" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/image-2.png?resize=700%2C367&#038;ssl=1" alt="" class="wp-image-312" data-recalc-dims="1" /></figure>
+
+
+
+<p>This is a great site! You have the ability to download patches (in ISO format ) for all your products. By selecting &#8220;vc&#8221; in the drop down, I was given download options for both patches. </p>
+
+
+
+<p><strong>Step 2:</strong> Upload and Mount the ISO to your VCSA</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="700" height="155" data-attachment-id="313" data-permalink="/screen-shot-2020-05-25-at-2-25-15-pm/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2020-05-25-at-2.25.15-pm.png?fit=1104%2C244&amp;ssl=1" data-orig-size="1104,244" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="screen-shot-2020-05-25-at-2.25.15-pm" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2020-05-25-at-2.25.15-pm.png?fit=300%2C66&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2020-05-25-at-2.25.15-pm.png?fit=700%2C155&amp;ssl=1" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2020-05-25-at-2.25.15-pm.png?resize=700%2C155&#038;ssl=1" alt="" class="wp-image-313" data-recalc-dims="1" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="700" height="637" data-attachment-id="314" data-permalink="/screen-shot-2020-05-25-at-2-25-43-pm/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2020-05-25-at-2.25.43-pm.png?fit=875%2C796&amp;ssl=1" data-orig-size="875,796" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="screen-shot-2020-05-25-at-2.25.43-pm" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2020-05-25-at-2.25.43-pm.png?fit=300%2C273&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2020-05-25-at-2.25.43-pm.png?fit=700%2C637&amp;ssl=1" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2020-05-25-at-2.25.43-pm.png?resize=700%2C637&#038;ssl=1" alt="" class="wp-image-314" data-recalc-dims="1" /></figure>
+
+
+
+<p><strong>Step 3:</strong> Log into Appliance Management, Click on &#8220;Updates&#8221; and then select &#8220;Check CD-ROM&#8221;</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="700" height="165" data-attachment-id="315" data-permalink="/screen-shot-2020-05-25-at-2-27-03-pm/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2020-05-25-at-2.27.03-pm.png?fit=1813%2C427&amp;ssl=1" data-orig-size="1813,427" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="screen-shot-2020-05-25-at-2.27.03-pm" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2020-05-25-at-2.27.03-pm.png?fit=300%2C71&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2020-05-25-at-2.27.03-pm.png?fit=700%2C165&amp;ssl=1" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2020-05-25-at-2.27.03-pm.png?resize=700%2C165&#038;ssl=1" alt="" class="wp-image-315" data-recalc-dims="1" /></figure>
+
+
+
+<p>After checking from the CD-ROM, you will be able to stage and update these updates. Before each update, a manual backup should be taken. That one time you don&#8217;t run a backup, you will run into update issues (trust me, this happened to me and needed to redeploy).</p>
+
+
+
+<p><strong>Step 4:</strong> Update and Grab a Beer!</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="700" height="332" data-attachment-id="316" data-permalink="/screen-shot-2020-05-25-at-2-29-21-pm/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2020-05-25-at-2.29.21-pm.png?fit=704%2C334&amp;ssl=1" data-orig-size="704,334" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="screen-shot-2020-05-25-at-2.29.21-pm" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2020-05-25-at-2.29.21-pm.png?fit=300%2C142&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2020-05-25-at-2.29.21-pm.png?fit=700%2C332&amp;ssl=1" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2020-05-25-at-2.29.21-pm.png?resize=700%2C332&#038;ssl=1" alt="" class="wp-image-316" data-recalc-dims="1" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="617" height="265" data-attachment-id="317" data-permalink="/screen-shot-2020-05-25-at-2-38-27-pm/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2020-05-25-at-2.38.27-pm.png?fit=617%2C265&amp;ssl=1" data-orig-size="617,265" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="screen-shot-2020-05-25-at-2.38.27-pm" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2020-05-25-at-2.38.27-pm.png?fit=300%2C129&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2020-05-25-at-2.38.27-pm.png?fit=617%2C265&amp;ssl=1" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2020-05-25-at-2.38.27-pm.png?resize=617%2C265&#038;ssl=1" alt="" class="wp-image-317" data-recalc-dims="1" /></figure>
+
+
+
+<p>If everything went as planned, your VCSA will be running on the latest version (or the version that was downloaded)</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2020/07/26/upgrading-the-vcsa-with-an-iso/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">309</post-id>	</item>
+		<item>
+		<title>Horizon &#8211; Installing the Connection Server</title>
+		<link>/2020/07/26/horizon-7-12-installing-a-connection-server/</link>
+					<comments>/2020/07/26/horizon-7-12-installing-a-connection-server/#respond</comments>
+		
+		<dc:creator><![CDATA[VirTaylor]]></dc:creator>
+		<pubDate>Sun, 26 Jul 2020 22:15:21 +0000</pubDate>
+				<category><![CDATA[Horizon]]></category>
+		<category><![CDATA[VDI]]></category>
+		<category><![CDATA[Virtualization]]></category>
+		<guid isPermaLink="false">http://blog.ucadministrator.com/?p=292</guid>
+
+					<description><![CDATA[This is the first installment of a &#8220;Mini-Series&#8221; about VMware Horizon. I recently passed my VCP-DTM (Desktop and Mobility) and a lot of my knowledge came/comes from my home lab. If you are looking to install and play with Horizon this series will get you started! The connection server is at the center of any &#8230; <a href="/2020/07/26/horizon-7-12-installing-a-connection-server/" class="more-link">Continue reading <span class="screen-reader-text">Horizon &#8211; Installing the Connection Server</span> <span class="meta-nav">&#8594;</span></a>]]></description>
+										<content:encoded><![CDATA[
+<p>This is the first installment of a &#8220;Mini-Series&#8221; about VMware Horizon. I recently passed my VCP-DTM (Desktop and Mobility) and a lot of my knowledge came/comes from my home lab. If you are looking to install and play with Horizon this series will get you started!</p>
+
+
+
+<p>The connection server is at the center of any Horizon environment. It is responsible for brokering users, provisioning desktops, managing desktop connections and applying policies. In Horizon 7.12 (and previous versions) the connection server is based on a Windows Server Instance. In this guide, I am using Windows Server 2019 GUI that is domain joined. </p>
+
+
+
+<p><strong>Step 1</strong>: Launch the installer, Accept the EULA, and Chose your install directory (Default is fine)</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="700" height="365" data-attachment-id="293" data-permalink="/screen-shot-2019-09-08-at-11-23-15-am/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2019-09-08-at-11.23.15-am.png?fit=1929%2C1006&amp;ssl=1" data-orig-size="1929,1006" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="screen-shot-2019-09-08-at-11.23.15-am" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2019-09-08-at-11.23.15-am.png?fit=300%2C156&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2019-09-08-at-11.23.15-am.png?fit=700%2C365&amp;ssl=1" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2019-09-08-at-11.23.15-am.png?resize=700%2C365&#038;ssl=1" alt="" class="wp-image-293" data-recalc-dims="1" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="700" height="364" data-attachment-id="294" data-permalink="/screen-shot-2019-09-08-at-11-23-28-am/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2019-09-08-at-11.23.28-am.png?fit=1927%2C1002&amp;ssl=1" data-orig-size="1927,1002" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="screen-shot-2019-09-08-at-11.23.28-am" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2019-09-08-at-11.23.28-am.png?fit=300%2C156&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2019-09-08-at-11.23.28-am.png?fit=700%2C364&amp;ssl=1" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2019-09-08-at-11.23.28-am.png?resize=700%2C364&#038;ssl=1" alt="" class="wp-image-294" data-recalc-dims="1" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="700" height="363" data-attachment-id="295" data-permalink="/screen-shot-2019-09-08-at-11-23-40-am/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2019-09-08-at-11.23.40-am.png?fit=1931%2C1002&amp;ssl=1" data-orig-size="1931,1002" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="screen-shot-2019-09-08-at-11.23.40-am" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2019-09-08-at-11.23.40-am.png?fit=300%2C156&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2019-09-08-at-11.23.40-am.png?fit=700%2C363&amp;ssl=1" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2019-09-08-at-11.23.40-am.png?resize=700%2C363&#038;ssl=1" alt="" class="wp-image-295" data-recalc-dims="1" /></figure>
+
+
+
+<p><strong>Step 2:</strong> Chose the type of Horizon Role to Install</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="700" height="364" data-attachment-id="296" data-permalink="/screen-shot-2019-09-08-at-11-23-57-am/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2019-09-08-at-11.23.57-am.png?fit=1931%2C1004&amp;ssl=1" data-orig-size="1931,1004" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="screen-shot-2019-09-08-at-11.23.57-am" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2019-09-08-at-11.23.57-am.png?fit=300%2C156&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2019-09-08-at-11.23.57-am.png?fit=700%2C364&amp;ssl=1" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2019-09-08-at-11.23.57-am.png?resize=700%2C364&#038;ssl=1" alt="" class="wp-image-296" data-recalc-dims="1" /></figure>
+
+
+
+<p>There are currently four roles that can be installed. Each of them have a specific purpose within the broader VDI infrastructure. Each role needs (and should) be run on a separate virtual machine. </p>
+
+
+
+<ul><li><strong>Connection Server</strong> &#8211; This is the standard connection server that serves as the main administration point. This is where policies, desktops, entitlements and environment configuration is completed. This is the first role to install when setting up a Greenfield deployment.</li><li><strong>Security Server</strong> &#8211; Typically deployed in the DMZ, the security server provides a dedicated instance when accessing over the Internet. In newer versions of Horizon this has been replaced by the Unified Access Gateway (UAG).</li><li><strong>Replica Server</strong> &#8211; This is a second (or more) connection server. With a replica server, the database is replicated from the main connection server. In some instances it may make sense to setup a dedicated replica server to isolate internal and external connections. For larger environments, you will see a load balancer in-front of your connection and replica servers with session tracking enabled. </li><li><strong>Enrollment Server</strong> &#8211; Leveraged for &#8220;TrueSSO&#8221; along with VMWare Identity Management (VIM).</li></ul>
+
+
+
+<p>During this step, you have the ability to choose between IPV4 and IPV6. If you require HTML5 access to desktops, <strong>do not choose IPV6 as it is currently not supported. </strong></p>
+
+
+
+<p><strong>Step 3: </strong>Configure Firewall Rules</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="700" height="364" data-attachment-id="298" data-permalink="/screen-shot-2019-09-08-at-11-25-34-am/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2019-09-08-at-11.25.34-am.png?fit=1934%2C1006&amp;ssl=1" data-orig-size="1934,1006" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="screen-shot-2019-09-08-at-11.25.34-am" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2019-09-08-at-11.25.34-am.png?fit=300%2C156&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2019-09-08-at-11.25.34-am.png?fit=700%2C364&amp;ssl=1" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2019-09-08-at-11.25.34-am.png?resize=700%2C364&#038;ssl=1" alt="" class="wp-image-298" data-recalc-dims="1" /></figure>
+
+
+
+<p>Typically I have the installer configure the Windows firewall automatically but if you are not planning on using certain aspects of the deployment,  you may choose to configure them manually. </p>
+
+
+
+<p><strong>Step 4: </strong>Configure AD Permissions</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="700" height="364" data-attachment-id="299" data-permalink="/screen-shot-2019-09-08-at-11-26-46-am/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2019-09-08-at-11.26.46-am.png?fit=1930%2C1004&amp;ssl=1" data-orig-size="1930,1004" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="screen-shot-2019-09-08-at-11.26.46-am" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2019-09-08-at-11.26.46-am.png?fit=300%2C156&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2019-09-08-at-11.26.46-am.png?fit=700%2C364&amp;ssl=1" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2019-09-08-at-11.26.46-am.png?resize=700%2C364&#038;ssl=1" alt="" class="wp-image-299" data-recalc-dims="1" /></figure>
+
+
+
+<p>Depending on our preference, you may choose to entitle Local Groups, Domain Users or Domain Groups to the administration page. In my environment, I have a dedicated group for Horizon Admins. </p>
+
+
+
+<p><strong>Step 5: </strong>Enable or Disable VMWare CEIP</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="700" height="365" data-attachment-id="300" data-permalink="/screen-shot-2019-09-08-at-11-27-04-am/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2019-09-08-at-11.27.04-am.png?fit=1928%2C1006&amp;ssl=1" data-orig-size="1928,1006" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="screen-shot-2019-09-08-at-11.27.04-am" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2019-09-08-at-11.27.04-am.png?fit=300%2C157&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2019-09-08-at-11.27.04-am.png?fit=700%2C365&amp;ssl=1" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2019-09-08-at-11.27.04-am.png?resize=700%2C365&#038;ssl=1" alt="" class="wp-image-300" data-recalc-dims="1" /></figure>
+
+
+
+<p><strong>Step 6:</strong> Finalize the Install</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="700" height="364" data-attachment-id="301" data-permalink="/screen-shot-2019-09-08-at-11-27-15-am/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2019-09-08-at-11.27.15-am.png?fit=1931%2C1003&amp;ssl=1" data-orig-size="1931,1003" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="screen-shot-2019-09-08-at-11.27.15-am" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2019-09-08-at-11.27.15-am.png?fit=300%2C156&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2019-09-08-at-11.27.15-am.png?fit=700%2C364&amp;ssl=1" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2019-09-08-at-11.27.15-am.png?resize=700%2C364&#038;ssl=1" alt="" class="wp-image-301" data-recalc-dims="1" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="700" height="364" data-attachment-id="302" data-permalink="/screen-shot-2019-09-08-at-11-30-54-am/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2019-09-08-at-11.30.54-am.png?fit=1931%2C1005&amp;ssl=1" data-orig-size="1931,1005" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="screen-shot-2019-09-08-at-11.30.54-am" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2019-09-08-at-11.30.54-am.png?fit=300%2C156&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2019-09-08-at-11.30.54-am.png?fit=700%2C364&amp;ssl=1" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/screen-shot-2019-09-08-at-11.30.54-am.png?resize=700%2C364&#038;ssl=1" alt="" class="wp-image-302" data-recalc-dims="1" /></figure>
+
+
+
+<p>Once the install has completed, you should see a new icon on your desktop. This is the link to the admin web page. After clicking it, you should be prompted to login using either a domain account or local account. In newer versions you will have the choice between the Horizon Console (HTML5) interface and the legacy Flex interface. To my knowledge, the Horizon Console is feature complete and is recommend. </p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="700" height="382" data-attachment-id="304" data-permalink="/image/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/image.png?fit=3584%2C1958&amp;ssl=1" data-orig-size="3584,1958" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="image" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/image.png?fit=300%2C164&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/image.png?fit=700%2C382&amp;ssl=1" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/image.png?resize=700%2C382&#038;ssl=1" alt="" class="wp-image-304" data-recalc-dims="1" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="700" height="382" data-attachment-id="305" data-permalink="/image-1/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/image-1.png?fit=3584%2C1958&amp;ssl=1" data-orig-size="3584,1958" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="image-1" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/image-1.png?fit=300%2C164&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/image-1.png?fit=700%2C382&amp;ssl=1" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/07/image-1.png?resize=700%2C382&#038;ssl=1" alt="" class="wp-image-305" data-recalc-dims="1" /></figure>
+
+
+
+<p>In the next post, we will dive into the different types of Desktop Pools and then create an Instant Clone Desktop Pool. Stay Tuned!</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2020/07/26/horizon-7-12-installing-a-connection-server/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">292</post-id>	</item>
+		<item>
+		<title>Migrate VMNICs from vDS to vSS with ESXCLI (No vCenter)</title>
+		<link>/2020/05/21/migrate-vmnics-from-vds-to-vss-with-esxcli-no-vcenter/</link>
+		
+		<dc:creator><![CDATA[VirTaylor]]></dc:creator>
+		<pubDate>Thu, 21 May 2020 21:53:16 +0000</pubDate>
+				<category><![CDATA[ESXI]]></category>
+		<category><![CDATA[Virtualization]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<guid isPermaLink="false">http://blog.ucadministrator.com/?p=275</guid>
+
+					<description><![CDATA[Recently, I had to migrate my VMNIC bindings from my Distributed Switches to my Standard Switches. Since my vCenter instance was being restored from backup (Failed 7.0 Update), I had to revert back to the ESXCLI. Step 1: Validate Current vDS Switch Settings esxcli network vSwitch dvs vmware list Step 2: Remove NIC from vDS &#8230; <a href="/2020/05/21/migrate-vmnics-from-vds-to-vss-with-esxcli-no-vcenter/" class="more-link">Continue reading <span class="screen-reader-text">Migrate VMNICs from vDS to vSS with ESXCLI (No vCenter)</span> <span class="meta-nav">&#8594;</span></a>]]></description>
+										<content:encoded><![CDATA[
+<p>Recently, I had to migrate my VMNIC bindings from my Distributed Switches to my Standard Switches. Since my vCenter instance was being restored from backup (Failed 7.0 Update), I had to revert back to the ESXCLI.</p>
+
+
+
+<p>Step 1: Validate Current vDS Switch Settings</p>
+
+
+
+<pre class="wp-block-preformatted">esxcli network vSwitch dvs vmware list</pre>
+
+
+
+<p>Step 2: Remove NIC from vDS</p>
+
+
+
+<pre class="wp-block-preformatted">esxcfg-vswitch -Q&nbsp;<strong>vmnic<em>_Name</em></strong>&nbsp;-V&nbsp;<em><strong>PortID_of_dvSwitch</strong></em>&nbsp;<em><strong>dvSwitch_Nam</strong>e</em></pre>
+
+
+
+<p>Step 3: Verify VMNIC was removed from vDS</p>
+
+
+
+<pre class="wp-block-preformatted">esxcli network vSwitch dvs vmware list</pre>
+
+
+
+<p>Step 4: Add VMNIC to vSS Switch (Can also be done by GUI but that is no fun)</p>
+
+
+
+<pre class="wp-block-preformatted">esxcli network vSwitch standard uplink add --uplink-name=<strong><em>vmnic</em>_Name</strong> --vswitch-name=<strong><em>vSS_Switch</em>_Name</strong></pre>
+
+
+
+<p></p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">275</post-id>	</item>
+		<item>
+		<title>Cisco ISE &#8211; Password Policy</title>
+		<link>/2020/05/04/cisco-ise-password-policy/</link>
+					<comments>/2020/05/04/cisco-ise-password-policy/#respond</comments>
+		
+		<dc:creator><![CDATA[VirTaylor]]></dc:creator>
+		<pubDate>Tue, 05 May 2020 00:20:02 +0000</pubDate>
+				<category><![CDATA[Cisco]]></category>
+		<category><![CDATA[ISE]]></category>
+		<category><![CDATA[Networking]]></category>
+		<category><![CDATA[Security]]></category>
+		<guid isPermaLink="false">http://blog.ucadministrator.com/?p=252</guid>
+
+					<description><![CDATA[As I stated in my last post, i have been using Cisco ISE more and more and recently got locked out of my instance&#8230; You can read more about how I reset the local credentials here.  I want to prevent this from happening again and there are two ways to complete this: 1 &#8211; Disable &#8230; <a href="/2020/05/04/cisco-ise-password-policy/" class="more-link">Continue reading <span class="screen-reader-text">Cisco ISE &#8211; Password Policy</span> <span class="meta-nav">&#8594;</span></a>]]></description>
+										<content:encoded><![CDATA[<p>As I stated in my last post, i have been using Cisco ISE more and more and recently got locked out of my instance&#8230; You can read more about how I reset the local credentials <a href="http://blog.ucadministrator.com/2020/05/04/cisco-ise-resetting-cli-credentials/">here</a>.  I want to prevent this from happening again and there are two ways to complete this:</p>
+<p>1 &#8211; Disable and/or modify the local password policy</p>
+<p>2 &#8211; Integrate ISE with Active Directory and leverage domain wide password policies.</p>
+<p>We will look at Option 1 in this post. The first thing to do is navigate to <strong>Administration -&gt; Admin Access -&gt; Authentication. </strong>From there there will be a tab for <strong>Password Policy.</strong></p>
+<p><img loading="lazy" decoding="async" data-attachment-id="256" data-permalink="/2020/05/04/cisco-ise-password-policy/screen-shot-2020-05-02-at-1-37-09-pm/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/05/screen-shot-2020-05-02-at-1.37.09-pm.png?fit=2466%2C1400&amp;ssl=1" data-orig-size="2466,1400" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Screen Shot 2020-05-02 at 1.37.09 PM" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/05/screen-shot-2020-05-02-at-1.37.09-pm.png?fit=300%2C170&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/05/screen-shot-2020-05-02-at-1.37.09-pm.png?fit=700%2C397&amp;ssl=1" class="alignnone size-full wp-image-256" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/05/screen-shot-2020-05-02-at-1.37.09-pm.png?resize=700%2C397&#038;ssl=1" alt="Screen Shot 2020-05-02 at 1.37.09 PM" width="700" height="397" data-recalc-dims="1" /></p>
+<p>At the bottom of this screen, there will be an option called <em><strong>A</strong></em><strong>dministrator Passwords expire 45 days after creation or last change</strong><em>. </em>You can increase the number of days or disable the setting all together by unchecking the box. I chose to disable it entirely as my ISE instance will be integrated to Active Directory and leverage those password policies.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2020/05/04/cisco-ise-password-policy/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">252</post-id>	</item>
+		<item>
+		<title>Cisco ISE &#8211; Resetting CLI Credentials</title>
+		<link>/2020/05/04/cisco-ise-resetting-cli-credentials/</link>
+					<comments>/2020/05/04/cisco-ise-resetting-cli-credentials/#respond</comments>
+		
+		<dc:creator><![CDATA[VirTaylor]]></dc:creator>
+		<pubDate>Mon, 04 May 2020 23:55:39 +0000</pubDate>
+				<category><![CDATA[Cisco]]></category>
+		<category><![CDATA[ISE]]></category>
+		<category><![CDATA[Networking]]></category>
+		<category><![CDATA[Security]]></category>
+		<guid isPermaLink="false">http://blog.ucadministrator.com/?p=230</guid>
+
+					<description><![CDATA[I have been doing more and more with Cisco ISE and it warranted a 2 node cluster at home. Everything was working great until the password on my local admin expired. To make matters worse, I forgot the CLI admin password&#8230; Thankfully there is a way to reset both! To start, you will need to &#8230; <a href="/2020/05/04/cisco-ise-resetting-cli-credentials/" class="more-link">Continue reading <span class="screen-reader-text">Cisco ISE &#8211; Resetting CLI Credentials</span> <span class="meta-nav">&#8594;</span></a>]]></description>
+										<content:encoded><![CDATA[<p>I have been doing more and more with Cisco ISE and it warranted a 2 node cluster at home. Everything was working great until the password on my local admin expired. To make matters worse, I forgot the CLI admin password&#8230; Thankfully there is a way to reset both!</p>
+<p>To start, you will need to download or grab the ISO Installer for your version of Cisco ISE and upload it to your Datastore and mount it in the CD/DVD drive of your VM.</p>
+<p><img loading="lazy" decoding="async" data-attachment-id="238" data-permalink="/2020/05/04/cisco-ise-resetting-cli-credentials/screen-shot-2020-05-02-at-1-24-24-pm/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/05/screen-shot-2020-05-02-at-1.24.24-pm.png?fit=1732%2C1568&amp;ssl=1" data-orig-size="1732,1568" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Screen Shot 2020-05-02 at 1.24.24 PM" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/05/screen-shot-2020-05-02-at-1.24.24-pm.png?fit=300%2C272&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/05/screen-shot-2020-05-02-at-1.24.24-pm.png?fit=700%2C634&amp;ssl=1" class="alignnone size-full wp-image-238" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/05/screen-shot-2020-05-02-at-1.24.24-pm.png?resize=700%2C634&#038;ssl=1" alt="Screen Shot 2020-05-02 at 1.24.24 PM" width="700" height="634" data-recalc-dims="1" /></p>
+<p>Once the ISO is mounted, you can boot to the ISO. You will be presented with four options, 2 for Installing ISE and 2 for System Utilities. <strong>Select Option 3.</strong></p>
+<p><img loading="lazy" decoding="async" data-attachment-id="242" data-permalink="/2020/05/04/cisco-ise-resetting-cli-credentials/screen-shot-2020-05-02-at-1-25-18-pm/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/05/screen-shot-2020-05-02-at-1.25.18-pm.png?fit=2650%2C1222&amp;ssl=1" data-orig-size="2650,1222" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Screen Shot 2020-05-02 at 1.25.18 PM" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/05/screen-shot-2020-05-02-at-1.25.18-pm.png?fit=300%2C138&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/05/screen-shot-2020-05-02-at-1.25.18-pm.png?fit=700%2C323&amp;ssl=1" class="alignnone size-full wp-image-242" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/05/screen-shot-2020-05-02-at-1.25.18-pm.png?resize=700%2C323&#038;ssl=1" alt="Screen Shot 2020-05-02 at 1.25.18 PM" width="700" height="323" data-recalc-dims="1" /></p>
+<p><strong>Select Option 1</strong> at the next prompt to <em>Recover Administrator Password.</em></p>
+<p><img loading="lazy" decoding="async" data-attachment-id="243" data-permalink="/2020/05/04/cisco-ise-resetting-cli-credentials/screen-shot-2020-05-02-at-1-25-45-pm/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/05/screen-shot-2020-05-02-at-1.25.45-pm.png?fit=1088%2C470&amp;ssl=1" data-orig-size="1088,470" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Screen Shot 2020-05-02 at 1.25.45 PM" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/05/screen-shot-2020-05-02-at-1.25.45-pm.png?fit=300%2C130&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/05/screen-shot-2020-05-02-at-1.25.45-pm.png?fit=700%2C302&amp;ssl=1" class="alignnone size-full wp-image-243" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/05/screen-shot-2020-05-02-at-1.25.45-pm.png?resize=700%2C302&#038;ssl=1" alt="Screen Shot 2020-05-02 at 1.25.45 PM" width="700" height="302" data-recalc-dims="1" /></p>
+<p>Once you have <strong>selected the name of your local administrator account</strong>, you will be prompted to enter a new password for the account.</p>
+<p><img loading="lazy" decoding="async" data-attachment-id="244" data-permalink="/2020/05/04/cisco-ise-resetting-cli-credentials/screen-shot-2020-05-02-at-1-26-38-pm/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/05/screen-shot-2020-05-02-at-1.26.38-pm.png?fit=1508%2C792&amp;ssl=1" data-orig-size="1508,792" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Screen Shot 2020-05-02 at 1.26.38 PM" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/05/screen-shot-2020-05-02-at-1.26.38-pm.png?fit=300%2C158&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/05/screen-shot-2020-05-02-at-1.26.38-pm.png?fit=700%2C368&amp;ssl=1" class="alignnone size-full wp-image-244" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/05/screen-shot-2020-05-02-at-1.26.38-pm.png?resize=700%2C368&#038;ssl=1" alt="Screen Shot 2020-05-02 at 1.26.38 PM" width="700" height="368" data-recalc-dims="1" /></p>
+<p>Enter your new password and select <strong>Y </strong>to save your changes and exit. From there you can <strong>Quit and Reload by using Q.</strong></p>
+<p><img loading="lazy" decoding="async" data-attachment-id="245" data-permalink="/2020/05/04/cisco-ise-resetting-cli-credentials/screen-shot-2020-05-02-at-1-26-49-pm/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/05/screen-shot-2020-05-02-at-1.26.49-pm.png?fit=838%2C410&amp;ssl=1" data-orig-size="838,410" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Screen Shot 2020-05-02 at 1.26.49 PM" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/05/screen-shot-2020-05-02-at-1.26.49-pm.png?fit=300%2C147&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/05/screen-shot-2020-05-02-at-1.26.49-pm.png?fit=700%2C342&amp;ssl=1" class="alignnone size-full wp-image-245" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/05/screen-shot-2020-05-02-at-1.26.49-pm.png?resize=700%2C342&#038;ssl=1" alt="Screen Shot 2020-05-02 at 1.26.49 PM" width="700" height="342" data-recalc-dims="1" /></p>
+<p>After ISE has restarted, you should be able to log into the console or SSH (if enabled). If you also need to change the application user password you can use the following command:</p>
+<pre><strong>application reset-passwd ise &lt;name of admin&gt;
+</strong></pre>
+<p><img loading="lazy" decoding="async" data-attachment-id="246" data-permalink="/2020/05/04/cisco-ise-resetting-cli-credentials/screen-shot-2020-05-02-at-1-34-43-pm/" data-orig-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/05/screen-shot-2020-05-02-at-1.34.43-pm.png?fit=854%2C280&amp;ssl=1" data-orig-size="854,280" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Screen Shot 2020-05-02 at 1.34.43 PM" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/05/screen-shot-2020-05-02-at-1.34.43-pm.png?fit=300%2C98&amp;ssl=1" data-large-file="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/05/screen-shot-2020-05-02-at-1.34.43-pm.png?fit=700%2C230&amp;ssl=1" class="alignnone size-full wp-image-246" src="https://i0.wp.com/virtualizedtaylor.wpcomstaging.com/wp-content/uploads/2020/05/screen-shot-2020-05-02-at-1.34.43-pm.png?resize=700%2C230&#038;ssl=1" alt="Screen Shot 2020-05-02 at 1.34.43 PM" width="700" height="230" data-recalc-dims="1" /></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2020/05/04/cisco-ise-resetting-cli-credentials/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">230</post-id>	</item>
+		<item>
+		<title>Virtual Port Channel (VPC) &#8211; Base Configuration</title>
+		<link>/2019/09/02/virtual-port-channel-vpc-base-configuration/</link>
+					<comments>/2019/09/02/virtual-port-channel-vpc-base-configuration/#respond</comments>
+		
+		<dc:creator><![CDATA[VirTaylor]]></dc:creator>
+		<pubDate>Mon, 02 Sep 2019 22:01:00 +0000</pubDate>
+				<category><![CDATA[Cisco]]></category>
+		<category><![CDATA[Networking]]></category>
+		<category><![CDATA[Nexus]]></category>
+		<category><![CDATA[VPC]]></category>
+		<guid isPermaLink="false">http://blog.ucadministrator.com/?p=202</guid>
+
+					<description><![CDATA[Overview: In my last post, we talked about some differences between traditional port channels and virtual port channel found on the Nexus line of switches. If you have not seen it, make sure to check it out here. Now that you understand some differences, its time to jump into the required configuration. Configuration: There are &#8230; <a href="/2019/09/02/virtual-port-channel-vpc-base-configuration/" class="more-link">Continue reading <span class="screen-reader-text">Virtual Port Channel (VPC) &#8211; Base Configuration</span> <span class="meta-nav">&#8594;</span></a>]]></description>
+										<content:encoded><![CDATA[<h3>Overview:</h3>
+<p>In my last post, we talked about some differences between traditional port channels and virtual port channel found on the Nexus line of switches. If you have not seen it, make sure to check it out <a href="http://blog.ucadministrator.com/2019/08/06/virtual-port-channel-i-though-it-was-port-channel/">here</a>. Now that you understand some differences, its time to jump into the required configuration.</p>
+<h3>Configuration:</h3>
+<p>There are a few main steps that need to be done to configure VPC. The first step is to enable the VPC feature. This is done with the following command and will need to be done on both switches.</p>
+<p>&nbsp;</p>
+<blockquote>
+<h6>NexusSwitch(config)#feature vpc</h6>
+</blockquote>
+<p>&nbsp;</p>
+<p>Once the feature has been enabled. Its time to create the VPC Domain. The commands are shown below. Replace xxx.xxx.xxx.xxx and yyy.yyy.yyy.yyy with the IP address of your switch. Each switch will have these addresses reversed as the source and destination will change.</p>
+<p>&nbsp;</p>
+<blockquote>
+<h6>NexusSwitch1(config)#vpc domain 1</h6>
+<h6>NexusSwitch1(config-vpc-domain)#role priority 24576</h6>
+<h6>NexusSwitch1(config-vpc-domain)#peer-keepalive destination xxx.xxx.xxx.xxx source yyy.yyy.yyy.yyy</h6>
+<h6>NexusSwitch1(config-vpc-domain)#exit</h6>
+</blockquote>
+<p>&nbsp;</p>
+<blockquote>
+<h6>NexusSwitch2(config)#vpc domain 1</h6>
+<h6>NexusSwitch2(config-vpc-domain)#role priority 28672</h6>
+<h6>NexusSwitch2(config-vpc-domain)#peer-keepalive destination yyy.yyy.yyy.yyy source xxx.xxx.xxx.xxx</h6>
+<h6>NexusSwitch2(config-vpc-domain)#exit</h6>
+</blockquote>
+<p>&nbsp;</p>
+<p>The priority value should be different between both of your switches. I typically use the same values as STP. This is more of an OCD thing for me&#8230; There is absolutely no requirement to do this and remember that the switch with the lower value will become primary.</p>
+<p>Once the domain has been created. Its time to create the peer-link. It can be done with the following commands:</p>
+<p>&nbsp;</p>
+<blockquote>
+<h6>NexusSwitch(config)#interface port-channel1</h6>
+<h6>NexusSwitch(config-if)#description VPC Peer-Link</h6>
+<h6>NexusSwitch(config-if)#switchport mode trunk</h6>
+<h6>NexusSwitch(config-if)#spanning-tree port type network</h6>
+<h6>NexusSwitch(config-if)vpc peer-link</h6>
+<h6>NexusSwitch(config-if)#no shutdown</h6>
+<h6>NexusSwitch(config-if)#exit</h6>
+</blockquote>
+<p>&nbsp;</p>
+<blockquote>
+<h6>NexusSwitch(config)#interface ethernet1/31-32</h6>
+<h6>NexusSwitch(config-if)#description VPC Peer-Link</h6>
+<h6>NexusSwitch(config-if)#switchport</h6>
+<h6>NexusSwitch(config-if)#switchport mode trunk</h6>
+<h6>NexusSwitch(config-if)channel-group 1 mode active</h6>
+<h6>NexusSwitch(config-if)#no shutdown</h6>
+<h6>NexusSwitch(config-if)#exit</h6>
+</blockquote>
+<p>&nbsp;</p>
+<p>This configuration needs to be identical on both switches. Any variation (outside of the description and interface number) can cause a consistency&nbsp;failure and the VPC to not be established.</p>
+<p>&nbsp;</p>
+<p>The next and final step is to configure the Keepalive. You can use any interface for the keepalive including the MGMT0 Interface. Be aware that if you use the Management interface you will have to specify the Management VRF on the peer-keepalive command within the VPC domain.</p>
+<p>&nbsp;</p>
+<blockquote>
+<h6>NexusSwitch1(config)#interface ethernet1/30</h6>
+<h6>NexusSwitch1(config-if)#description VPC Keep-Alive</h6>
+<h6>NexusSwitch1(config-if)# ip address yyy.yyy.yyy.yyy/yy</h6>
+<h6>NexusSwitch1(config-if)#no shutdown</h6>
+<h6>NexusSwitch1(config-if)#exit</h6>
+</blockquote>
+<p>&nbsp;</p>
+<blockquote>
+<h6>NexusSwitch2(config)#interface ethernet1/30</h6>
+<h6>NexusSwitch2(config-if)#description VPC Keep-Alive</h6>
+<h6>NexusSwitch2(config-if)# ip address xxx.xxx.xxx.xxx/xx</h6>
+<h6>NexusSwitch2(config-if)#no shutdown</h6>
+<h6>NexusSwitch2(config-if)#exit</h6>
+</blockquote>
+<p>&nbsp;</p>
+<p>You do have the ability and it is recommended to configure the KeepAlive with a port channel. This will give you redundancy if a cable or port ever fails. In the event, you want to use a different VRF for the keep-alive link you can do so with the following configuration. Remember to add that VRF to the keep-alive command within the VPC domain.</p>
+<p>&nbsp;</p>
+<blockquote>
+<h6>NexusSwitch(config)#vrf context KEEPALIVE</h6>
+<h6>NexusSwitch(config-vrf)#exit</h6>
+<h6>NexusSwitch(config)#interface ethernet1/30</h6>
+<h6>NexusSwitch(config-if)#description VPC Keep-Alive</h6>
+<h6>NexusSwitch(config-if)#vrf member KEEPALIVE</h6>
+<h6>NexusSwitch(config-if)# ip address xxx.xxx.xxx.xxx/xx</h6>
+<h6>NexusSwitch(config-if)#no shutdown</h6>
+<h6>NexusSwitch(config-if)#exit</h6>
+</blockquote>
+<p>&nbsp;</p>
+<p>This configuration should get you up and running and allow you to create virtual port channels. In the next post, we will go over some additional configuration you can add to the VPC Domain like the peer-switch command to manipulate and improve STP convergence.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2019/09/02/virtual-port-channel-vpc-base-configuration/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">202</post-id>	</item>
+	</channel>
+</rss>
