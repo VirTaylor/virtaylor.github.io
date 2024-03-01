@@ -11,8 +11,8 @@
 <channel>
 	<title>
 	Comments on: Meet the Blogger!	</title>
-	<atom:link href="/2018/05/22/meet-the-blogger/feed/" rel="self" type="application/rss+xml" />
-	<link>/2018/05/22/meet-the-blogger/</link>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../index.html</link>
 	<description>Networking - Virtualization - Security - Automation</description>
 	<lastBuildDate>Sat, 10 Oct 2020 23:35:32 +0000</lastBuildDate>
 	<sy:updatePeriod>

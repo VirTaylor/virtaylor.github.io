@@ -11,8 +11,8 @@
 <channel>
 	<title>
 	Comments on: Virtual Port Channel? I though it was Port Channel?	</title>
-	<atom:link href="/2019/08/06/virtual-port-channel-i-though-it-was-port-channel/feed/" rel="self" type="application/rss+xml" />
-	<link>/2019/08/06/virtual-port-channel-i-though-it-was-port-channel/</link>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../index.html</link>
 	<description>Networking - Virtualization - Security - Automation</description>
 	<lastBuildDate>Wed, 07 Aug 2019 01:56:07 +0000</lastBuildDate>
 	<sy:updatePeriod>

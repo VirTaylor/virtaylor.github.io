@@ -11,8 +11,8 @@
 <channel>
 	<title>
 	Comments on: Cisco Live &#8211; Interesting Sessions	</title>
-	<atom:link href="/2018/05/23/cisco-live-interesting-sessions/feed/" rel="self" type="application/rss+xml" />
-	<link>/2018/05/23/cisco-live-interesting-sessions/</link>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../index.html</link>
 	<description>Networking - Virtualization - Security - Automation</description>
 	<lastBuildDate>Thu, 01 Dec 2022 20:03:16 +0000</lastBuildDate>
 	<sy:updatePeriod>
@@ -23,11 +23,11 @@
 	<item>
 		<title>
 		By: Corinne		</title>
-		<link>/2018/05/23/cisco-live-interesting-sessions/comment-page-1/#comment-809</link>
+		<link>./../comment-page-1/index.html#comment-809</link>
 
 		<dc:creator><![CDATA[Corinne]]></dc:creator>
 		<pubDate>Thu, 01 Dec 2022 20:03:16 +0000</pubDate>
-		<guid isPermaLink="false">/2018/05/23/cisco-live-interesting-sessions/#comment-809</guid>
+		<guid isPermaLink="false">./../index.html#comment-809</guid>
 
 					<description><![CDATA[Thannk you for writing this]]></description>
 			<content:encoded><![CDATA[<p>Thannk you for writing this</p>

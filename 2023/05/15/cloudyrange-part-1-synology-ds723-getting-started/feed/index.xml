@@ -11,8 +11,8 @@
 <channel>
 	<title>
 	Comments on: CloudyRange &#8211; Part 1 &#8211; Synology DS723+ &#8211; Getting Started	</title>
-	<atom:link href="/2023/05/15/cloudyrange-part-1-synology-ds723-getting-started/feed/" rel="self" type="application/rss+xml" />
-	<link>/2023/05/15/cloudyrange-part-1-synology-ds723-getting-started/</link>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../index.html</link>
 	<description>Networking - Virtualization - Security - Automation</description>
 	<lastBuildDate>Thu, 02 Nov 2023 14:13:08 +0000</lastBuildDate>
 	<sy:updatePeriod>

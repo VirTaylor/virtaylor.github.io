@@ -11,8 +11,8 @@
 <channel>
 	<title>
 	Comments on: vSphere for Mobile	</title>
-	<atom:link href="/2019/06/11/vsphere-for-mobile/feed/" rel="self" type="application/rss+xml" />
-	<link>/2019/06/11/vsphere-for-mobile/</link>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../index.html</link>
 	<description>Networking - Virtualization - Security - Automation</description>
 	<lastBuildDate>Tue, 05 May 2020 23:45:21 +0000</lastBuildDate>
 	<sy:updatePeriod>

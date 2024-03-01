@@ -11,8 +11,8 @@
 <channel>
 	<title>
 	Comments on: NECCDC 2019 &#8211; Black Team Perspective	</title>
-	<atom:link href="/2019/03/29/neccdc-2019-black-team-perspective/feed/" rel="self" type="application/rss+xml" />
-	<link>/2019/03/29/neccdc-2019-black-team-perspective/</link>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../index.html</link>
 	<description>Networking - Virtualization - Security - Automation</description>
 	<lastBuildDate>Sun, 16 May 2021 14:32:44 +0000</lastBuildDate>
 	<sy:updatePeriod>

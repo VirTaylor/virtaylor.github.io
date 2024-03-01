@@ -11,8 +11,8 @@
 <channel>
 	<title>
 	Comments on: Are you using content library&#8217;s? Cause you should be!	</title>
-	<atom:link href="/2019/06/11/are-you-using-content-librarys-cause-you-should-be/feed/" rel="self" type="application/rss+xml" />
-	<link>/2019/06/11/are-you-using-content-librarys-cause-you-should-be/</link>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../index.html</link>
 	<description>Networking - Virtualization - Security - Automation</description>
 	<lastBuildDate>Tue, 05 May 2020 23:45:06 +0000</lastBuildDate>
 	<sy:updatePeriod>

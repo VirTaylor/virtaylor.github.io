@@ -11,8 +11,8 @@
 <channel>
 	<title>
 	Comments on: Upgrade to ESXI 7.0 U1 with the CLI	</title>
-	<atom:link href="/2020/11/01/upgrade-to-esxi-7-0-u1-with-the-cli/feed/" rel="self" type="application/rss+xml" />
-	<link>/2020/11/01/upgrade-to-esxi-7-0-u1-with-the-cli/</link>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../index.html</link>
 	<description>Networking - Virtualization - Security - Automation</description>
 	<lastBuildDate>Sun, 16 May 2021 14:44:53 +0000</lastBuildDate>
 	<sy:updatePeriod>

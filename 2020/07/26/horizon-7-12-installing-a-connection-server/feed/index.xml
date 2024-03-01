@@ -11,8 +11,8 @@
 <channel>
 	<title>
 	Comments on: Horizon &#8211; Installing the Connection Server	</title>
-	<atom:link href="/2020/07/26/horizon-7-12-installing-a-connection-server/feed/" rel="self" type="application/rss+xml" />
-	<link>/2020/07/26/horizon-7-12-installing-a-connection-server/</link>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../index.html</link>
 	<description>Networking - Virtualization - Security - Automation</description>
 	<lastBuildDate>Sun, 16 May 2021 14:31:34 +0000</lastBuildDate>
 	<sy:updatePeriod>

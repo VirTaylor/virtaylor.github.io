@@ -11,8 +11,8 @@
 <channel>
 	<title>
 	Comments on: vCenter Part 1 &#8211; Installation	</title>
-	<atom:link href="/2018/09/10/vcenter-part-1-installation/feed/" rel="self" type="application/rss+xml" />
-	<link>/2018/09/10/vcenter-part-1-installation/</link>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../index.html</link>
 	<description>Networking - Virtualization - Security - Automation</description>
 	<lastBuildDate>Tue, 05 May 2020 23:44:13 +0000</lastBuildDate>
 	<sy:updatePeriod>

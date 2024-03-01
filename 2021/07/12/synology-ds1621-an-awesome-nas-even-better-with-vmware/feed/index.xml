@@ -11,8 +11,8 @@
 <channel>
 	<title>
 	Comments on: Synology DS1621+ &#8211; An Awesome NAS! Even Better with VMware!	</title>
-	<atom:link href="/2021/07/12/synology-ds1621-an-awesome-nas-even-better-with-vmware/feed/" rel="self" type="application/rss+xml" />
-	<link>/2021/07/12/synology-ds1621-an-awesome-nas-even-better-with-vmware/</link>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../index.html</link>
 	<description>Networking - Virtualization - Security - Automation</description>
 	<lastBuildDate>Tue, 13 Jul 2021 02:01:02 +0000</lastBuildDate>
 	<sy:updatePeriod>

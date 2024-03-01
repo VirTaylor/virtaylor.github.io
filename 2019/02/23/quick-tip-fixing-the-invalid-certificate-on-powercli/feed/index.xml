@@ -11,8 +11,8 @@
 <channel>
 	<title>
 	Comments on: Fixing the Invalid Certificate on PowerCLI	</title>
-	<atom:link href="/2019/02/23/quick-tip-fixing-the-invalid-certificate-on-powercli/feed/" rel="self" type="application/rss+xml" />
-	<link>/2019/02/23/quick-tip-fixing-the-invalid-certificate-on-powercli/</link>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../index.html</link>
 	<description>Networking - Virtualization - Security - Automation</description>
 	<lastBuildDate>Tue, 05 May 2020 23:44:52 +0000</lastBuildDate>
 	<sy:updatePeriod>

@@ -11,8 +11,8 @@
 <channel>
 	<title>
 	Comments on: Automating CSR and ESXI Deployments with Ansible!	</title>
-	<atom:link href="/2020/12/05/automating-csr-and-esxi-deployments-with-ansible/feed/" rel="self" type="application/rss+xml" />
-	<link>/2020/12/05/automating-csr-and-esxi-deployments-with-ansible/</link>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../index.html</link>
 	<description>Networking - Virtualization - Security - Automation</description>
 	<lastBuildDate>Sun, 16 May 2021 14:44:09 +0000</lastBuildDate>
 	<sy:updatePeriod>
